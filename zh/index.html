@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MELAB | 首页</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .brand img{height:28px;width:auto;display:block}
+    .brand span{display:flex;align-items:center;gap:10px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:stretch}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+    .big{font-size:40px;line-height:1.1;margin:0 0 10px}
+    .subtitle{margin:0 0 14px;color:var(--muted)}
+    .quick{display:grid;grid-template-columns:1fr;gap:12px}
+    .list{margin:0;padding-left:18px;color:var(--muted);line-height:1.8}
+    .pill{display:inline-block;margin-right:8px;margin-top:6px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--text);font-size:13px}
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <div class="brand">
+      <span>
+        <img src="../assets/img/melab_logo.png" alt="MELAB Logo" onerror="this.style.display='none'">
+        MELAB
+      </span>
+    </div>
+    <div class="navlinks">
+      <a href="./index.html">首页</a>
+      <a href="./team.html">团队成员</a>
+      <a href="./databases.html">数据库申请</a>
+      <div class="lang">
+        <a href="javascript:void(0)" class="btn" data-lang-btn="zh" data-lang-link="zh">中文</a>
+        <a href="javascript:void(0)" class="btn" data-lang-btn="en" data-lang-link="en">EN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-grid">
+      <!-- Left: intro -->
+      <div class="card">
+        <h1 class="big">Micro-Expression Laboratory<br/>MELAB</h1>
+        <p class="subtitle">
+          中国科学院心理研究所微表情研究组
+        </p>
+
+        <p>
+          国内唯一专注于<strong>心理学与计算机交叉领域</strong>的微表情应用研究中心团队，
+          为微表情研究提供了坚实的基础，推动微表情技术的不断发展。
+        </p>
+
+        <div style="margin-top:12px">
+          <span class="pill">微表情</span>
+          <span class="pill">心理学 × 计算机</span>
+          <span class="pill">应用研究</span>
+        </div>
+
+        <hr/>
+
+        <p>
+          此外，团队聚焦<strong>残疾人心理健康</strong>的<strong>智能人机交互</strong>研究。
+        </p>
+
+
+      </div>
+
+      <!-- Right: quick info -->
+      <div class="quick">
+        <div class="card">
+          <h3>研究方向</h3>
+          <ul class="list">
+            <li>微表情：数据集构建、检测与识别、应用研究</li>
+            <li>心理学与计算机交叉：情绪计算与行为分析</li>
+            <li>面向残疾人心理健康的智能人机交互</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>快速入口</h3>
+          <div class="btns">
+            <a class="btn primary" href="./databases.html">数据库申请</a>
+            <a class="btn" href="./team.html">团队</a>
+          </div>
+          <p class="meta" style="margin-top:10px;color:var(--muted)">
+            其他信息待更新（如论文、项目、新闻、加入我们等）。
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © <span id="y"></span> MELAB · Powered by GitHub Pages
+  </div>
+</div>
+
+<script src="../assets/js/lang.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

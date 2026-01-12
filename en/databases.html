@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Database Access</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <div class="brand">
+  <img src="../assets/img/melab_logo.png" alt="MELAB Logo">
+  <span>MELAB</span>
+</div>
+    <div class="navlinks">
+      <a href="./index.html">Home</a>
+      <a href="./team.html">Team</a>
+      <a href="./databases.html">Database Access</a>
+      <div class="lang">
+        <a href="javascript:void(0)" class="btn" data-lang-btn="zh" data-lang-link="zh">中文</a>
+        <a href="javascript:void(0)" class="btn" data-lang-btn="en" data-lang-link="en">EN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Database Access</h1>
+    <p>Select a database below. Each database page includes: dataset overview, a blank License Agreement PDF template, and an external application link (for submitting info and uploading the signed agreement).</p>
+
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>CASME Database</h3>
+      <span class="badge">Spontaneous Micro-Expressions</span>
+      <p>A spontaneous micro-expression database. From ~1500 elicited facial movements recorded at 60 fps, 195 micro-expressions were selected and annotated with onset/peak/offset frames, action units (AUs), and emotion labels.</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casme.html">View & Apply</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>CASME II</h3>
+      <span class="badge">200 fps · AU & Emotion Labels</span>
+      <p>An improved micro-expression database with higher temporal resolution (200 fps) and facial area resolution (~280×340). 247 micro-expressions were selected from nearly 3000 facial movements, with AU and emotion labels and baseline evaluation.</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casme2.html">View & Apply</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>CAS(ME)²</h3>
+      <span class="badge">Macro + Micro in Long Videos</span>
+      <p>A database containing both macro- and micro-expressions in long videos. It provides long videos (Part A) and cropped samples (Part B), with labels based on AUs, self-reported emotion for each facial movement, and the emotion types of eliciting videos.</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casme_sq.html">View & Apply</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>CAS(ME)3</h3>
+      <span class="badge">Large-scale · RGB-D · Multi-modal</span>
+      <p>A large-scale spontaneous ME database with ~80 hours of videos (>8,000,000 frames), including 1,109 micro-expressions and 3,490 macro-expressions. It additionally provides depth modality and a large set of unlabeled videos for unsupervised methods.</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casme3.html">View & Apply</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>CASMEMG</h3>
+      <span class="badge">Micro-Expressions + Facial EMG</span>
+      <p>A database with micro-expression videos and facial electromyography (EMG). Videos were captured in 4K (3840×2160) at 30 fps; EMG signals were collected from 7 superficial muscles. It contains 147 macro- and 233 micro-expression samples with keyframes, AUs, and emotion labels.</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casmemg.html">View & Apply</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Chinese Dysarthria Speech Database (CDSD)</h3>
+      <span class="badge">133 hours · 44 speakers</span>
+      <p>The largest Chinese dysarthria dataset to date, featuring 133 hours of recordings from 44 speakers, developed to support dysarthric speech recognition research and benchmarks (CER).</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/cdsd.html">View & Apply</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">© <span id="y"></span> MELAB</div>
+</div>
+
+<script src="../assets/js/lang.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>数据库申请</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+   <div class="brand">
+  <img src="../assets/img/melab_logo.png" alt="MELAB Logo">
+  <span>MELAB</span>
+</div>
+    <div class="navlinks">
+      <a href="./index.html">首页</a>
+      <a href="./team.html">团队成员</a>
+      <a href="./databases.html">数据库申请</a>
+      <div class="lang">
+        <a href="javascript:void(0)" class="btn" data-lang-btn="zh" data-lang-link="zh">中文</a>
+        <a href="javascript:void(0)" class="btn" data-lang-btn="en" data-lang-link="en">EN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>系列数据库申请</h1>
+    <p>请选择要申请的数据库。每个数据库页面提供：数据库简介、License Agreement 空白 PDF 下载、以及外部申请链接（用于提交信息与上传签署文件）。</p>
+
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>CASME Database</h3>
+      <span class="badge">Spontaneous Micro-Expressions</span>
+      <p>自发微表情数据库：在实验室诱发并从约 1500 段面部动作中筛选 195 个微表情样本，标注首帧/峰值/末帧、AUs 与情绪标签。</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casme.html">查看与申请</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>CASME II</h3>
+      <span class="badge">200 fps · AU & Emotion Labels</span>
+      <p>改进版微表情数据库：更高时间分辨率（200fps）与面部分辨率（约 280×340），从近 3000 段面部动作中筛选 247 个微表情并标注 AUs/情绪，提供基线评测。</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casme2.html">查看与申请</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>CAS(ME)²</h3>
+      <span class="badge">Macro + Micro in Long Videos</span>
+      <p>首个公开收录长视频中的宏表情与微表情数据库：含长视频（Part A）与裁剪样本（Part B），融合 AU、自我报告情绪与诱发视频情感类型进行标注，支持从长视频流中检测/识别。</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casme_sq.html">查看与申请</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>CAS(ME)3</h3>
+      <span class="badge">Large-scale · RGB-D · Multi-modal</span>
+      <p>大规模自发微表情数据库：约 80 小时视频、超过 8,000,000 帧，含 1,109 个微表情与 3,490 个宏表情标注；提供深度信息与更多模态信号，并包含大量未标注数据支持无监督方法。</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casme3.html">查看与申请</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>CASMEMG</h3>
+      <span class="badge">Micro-Expressions + Facial EMG</span>
+      <p>微表情视频 + 面部肌电（EMG）数据库：4K（3840×2160）、30fps 视频；采集 7 路浅层肌肉 EMG；包含 147 个宏表情与 233 个微表情样本，提供关键帧、AUs 与情绪标签。</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/casmemg.html">查看与申请</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Chinese Dysarthria Speech Database (CDSD)</h3>
+      <span class="badge">133 hours · 44 speakers</span>
+      <p>中文构音障碍语音数据库：收录 44 位说话人共 133 小时语音数据，面向构音障碍语音识别研究，提供基准结果（CER 指标）以支持相关算法发展。</p>
+      <div class="btns">
+        <a class="btn primary" href="./db/cdsd.html">查看与申请</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">© <span id="y"></span> MELAB</div>
+</div>
+
+<script src="../assets/js/lang.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

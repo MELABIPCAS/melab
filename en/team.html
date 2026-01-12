@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Team | MELAB</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    @media(max-width:1000px){.team-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:760px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.team-grid{grid-template-columns:1fr}}
+    .member{display:flex;flex-direction:column;gap:10px}
+    .avatar{width:100%;aspect-ratio:1/1;border-radius:14px;object-fit:cover;border:1px solid var(--border);background:rgba(255,255,255,.03)}
+    .member h3{margin:0;font-size:16px}
+    .meta{color:var(--muted);font-size:13px;line-height:1.5}
+    .sec-title{margin:18px 0 10px;font-size:20px}
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <div class="brand">
+  <img src="../assets/img/melab_logo.png" alt="MELAB Logo">
+  <span>MELAB</span>
+</div>
+
+    <div class="navlinks">
+      <a href="./index.html">Home</a>
+      <a href="./team.html">Team</a>
+      <a href="./databases.html">Database Access</a>
+      <div class="lang">
+        <a href="javascript:void(0)" class="btn" data-lang-btn="zh" data-lang-link="zh">中文</a>
+        <a href="javascript:void(0)" class="btn" data-lang-btn="en" data-lang-link="en">EN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Team</h1>
+    <p>Members of Micro-Expression Laboratory (MELAB), grouped by research area. You can add personal webpages, emails, or research interests on each card if needed.</p>
+  </div>
+
+  <!-- PI / Faculty -->
+  <h2 class="sec-title">PI / Faculty</h2>
+  <div class="team-grid">
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/wang_sujing.jpg" alt="Dr. Su-Jing Wang" onerror="this.style.display='none'">
+      <div>
+        <h3>Dr. Su-Jing Wang（王甦菁）</h3>
+        <div class="meta">Principal Investigator</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/liu_ye.jpg" alt="Dr. Ye Liu" onerror="this.style.display='none'">
+      <div>
+        <h3>Dr. Ye Liu（刘烨）</h3>
+        <div class="meta">Faculty</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/li_jingting.jpg" alt="Dr. Jingting Li" onerror="this.style.display='none'">
+      <div>
+        <h3>Dr. Jingting Li（李婧婷）</h3>
+        <div class="meta">Faculty</div>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <!-- Psychology -->
+  <h2 class="sec-title">Psychology</h2>
+  <div class="team-grid">
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/li_ailian.jpg" alt="Ailian Li" onerror="this.style.display='none'">
+      <div>
+        <h3>Ailian Li（李艾莲）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/fan_yali.jpg" alt="Yali Fan" onerror="this.style.display='none'">
+      <div>
+        <h3>Yali Fan（范娅丽）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/sun_mengyi.jpg" alt="Mengyi Sun" onerror="this.style.display='none'">
+      <div>
+        <h3>Mengyi Sun（孙梦依）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/zhao_lin.jpg" alt="Lin Zhao" onerror="this.style.display='none'">
+      <div>
+        <h3>Lin Zhao（赵琳）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/song_tingting.jpg" alt="Tingting Song" onerror="this.style.display='none'">
+      <div>
+        <h3>Tingting Song（宋婷婷）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/yao_jialu.jpg" alt="Jialu Yao" onerror="this.style.display='none'">
+      <div>
+        <h3>Jialu Yao（姚嘉璐）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/hao_ranran.jpg" alt="Ranran Hao" onerror="this.style.display='none'">
+      <div>
+        <h3>Ranran Hao（郝冉冉）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/shang_yunzhu.jpg" alt="Yunzhu Shang" onerror="this.style.display='none'">
+      <div>
+        <h3>Yunzhu Shang（尚耘竹）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <!-- Computer Science -->
+  <h2 class="sec-title">Computer Science</h2>
+  <div class="team-grid">
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/qian_yu.jpg" alt="Yu Qian" onerror="this.style.display='none'">
+      <div>
+        <h3>Yu Qian（钱雨）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/liu_bai.jpg" alt="Bai Liu" onerror="this.style.display='none'">
+      <div>
+        <h3>Bai Liu（刘柏）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/zhao_xinran.jpg" alt="Xinran Zhao" onerror="this.style.display='none'">
+      <div>
+        <h3>Xinran Zhao（赵欣然）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/sha_hui.jpg" alt="Hui Sha" onerror="this.style.display='none'">
+      <div>
+        <h3>Hui Sha（沙慧）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/zhang_jiazhuang.jpg" alt="Jiazhuang Zhang" onerror="this.style.display='none'">
+      <div>
+        <h3>Jiazhuang Zhang（张家壮）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+
+    <div class="card member">
+      <img class="avatar" src="../assets/img/team/ma_junchi.jpg" alt="Junchi Ma" onerror="this.style.display='none'">
+      <div>
+        <h3>Junchi Ma（马骏驰）</h3>
+        <div class="meta">Member</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">© <span id="y"></span> MELAB</div>
+</div>
+
+<script src="../assets/js/lang.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

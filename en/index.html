@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MELAB | Home</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .brand img{height:28px;width:auto;display:block}
+    .brand span{display:flex;align-items:center;gap:10px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:stretch}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+    .big{font-size:40px;line-height:1.1;margin:0 0 10px}
+    .subtitle{margin:0 0 14px;color:var(--muted)}
+    .quick{display:grid;grid-template-columns:1fr;gap:12px}
+    .list{margin:0;padding-left:18px;color:var(--muted);line-height:1.8}
+    .pill{display:inline-block;margin-right:8px;margin-top:6px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--text);font-size:13px}
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <div class="brand">
+      <span>
+        <img src="../assets/img/melab_logo.png" alt="MELAB Logo" onerror="this.style.display='none'">
+        MELAB
+      </span>
+    </div>
+    <div class="navlinks">
+      <a href="./index.html">Home</a>
+      <a href="./team.html">Team</a>
+      <a href="./databases.html">Database Access</a>
+      <div class="lang">
+        <a href="javascript:void(0)" class="btn" data-lang-btn="zh" data-lang-link="zh">中文</a>
+        <a href="javascript:void(0)" class="btn" data-lang-btn="en" data-lang-link="en">EN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-grid">
+      <!-- Left: intro -->
+      <div class="card">
+        <h1 class="big">Micro-Expression Laboratory<br/>MELAB</h1>
+        <p class="subtitle">
+          Micro-Expression Research Group, Institute of Psychology, Chinese Academy of Sciences
+        </p>
+
+        <p>
+          MELAB is the only research team in China dedicated to micro-expression applications at the intersection of
+          <strong>psychology</strong> and <strong>computer science</strong>, providing a solid foundation for micro-expression research
+          and advancing the development of related technologies.
+        </p>
+
+        <div style="margin-top:12px">
+          <span class="pill">Micro-Expression</span>
+          <span class="pill">Psychology × CS</span>
+          <span class="pill">Applied Research</span>
+        </div>
+
+        <hr/>
+
+        <p>
+          We also focus on <strong>intelligent human–computer interaction</strong> for <strong>mental health of people with disabilities</strong>.
+        </p>
+
+
+      </div>
+
+      <!-- Right: quick info -->
+      <div class="quick">
+        <div class="card">
+          <h3>Research Areas</h3>
+          <ul class="list">
+            <li>Micro-expression: dataset construction, spotting & recognition, applications</li>
+            <li>Psychology × Computer Science: affective computing and behavior analysis</li>
+            <li>Intelligent HCI for disability mental health</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Quick Links</h3>
+          <div class="btns">
+            <a class="btn primary" href="./databases.html">Database Access</a>
+            <a class="btn" href="./team.html">Team</a>
+          </div>
+          <p class="meta" style="margin-top:10px;color:var(--muted)">
+            More information will be updated soon (publications, projects, news, join us, etc.).
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © <span id="y"></span> MELAB · Powered by GitHub Pages
+  </div>
+</div>
+
+<script src="../assets/js/lang.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
