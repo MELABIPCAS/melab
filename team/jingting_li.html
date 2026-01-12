@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-zh="李婧婷 - 个人主页" data-lang-en="Jingting Li - Homepage">李婧婷 - 个人主页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+        h2 { font-family: "Georgia", Cambria, "Times New Roman", Times, serif; }
+        /* Removed redundant margin from publication-item as space-y utility is used on the parent */
+        .publication-links a { margin-left: 1rem; font-weight: 500; color: #3b82f6; }
+        .publication-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800">
+                <span data-lang-zh="李婧婷" data-lang-en="Jingting Li">李婧婷</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <nav class="hidden md:flex space-x-5 text-sm font-medium">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition" data-lang-zh="关于我" data-lang-en="About">关于我</a>
+                    <a href="#news" class="text-gray-600 hover:text-blue-600 transition" data-lang-zh="最新动态" data-lang-en="News">最新动态</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-600 transition" data-lang-zh="教育与经历" data-lang-en="Experience">教育与经历</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition" data-lang-zh="科研项目" data-lang-en="Projects">科研项目</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition" data-lang-zh="学术兼职" data-lang-en="Services">学术兼职</a>
+                    <a href="#publications" class="text-gray-600 hover:text-blue-600 transition" data-lang-zh="学术出版" data-lang-en="Publications">学术出版</a>
+                </nav>
+                <button id="lang-switcher" class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100 transition focus:outline-none">
+                    English
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <div class="md:flex md:space-x-12">
+            <aside class="md:w-1/3 mb-10 md:mb-0">
+                <div class="sticky top-28">
+                    <img src="../assets/img/team/li_jingting.jpg" alt="Profile Photo" class="rounded-lg shadow-md w-1/3 md:w-1/2 mx-auto">
+
+                    <h1 class="text-3xl font-bold mt-6 text-center md:text-center" data-lang-zh="李婧婷" data-lang-en="Jingting Li">李婧婷</h1>
+                    <p class="mt-2 text-gray-600 text-center md:text-center">
+                        <span data-lang-zh="中国科学院心理研究所" data-lang-en="Institute of Psychology, CAS">中国科学院心理研究所</span><br>
+                        <span data-lang-zh="副研究员, 博士生导师" data-lang-en="Associate Professor, Doctoral Supervisor">副研究员, 博士生导师</span>
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <h3 class="font-bold text-gray-700" data-lang-zh="联系方式" data-lang-en="Contact">联系方式</h3>
+                        <p class="mt-2 text-sm text-gray-600">lijt@psych.ac.cn</p>
+                        <a href="https://scholar.google.com/citations?user=your_scholar_id&user=RcVTdL0AAAAJ" target="_blank" class="mt-4 inline-flex items-center justify-center bg-blue-600 text-white w-full text-center py-2 rounded-lg hover:bg-blue-700 transition">
+                             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 16 16"><path d="M12.14 10.19h-.414v-.002c.002-.002.002-.002.002-.002a2.467 2.467 0 0 0-1.874-2.146 2.467 2.467 0 0 0-2.612.353 2.467 2.467 0 0 0-.828 2.812 2.467 2.467 0 0 0 2.228 1.694h.002c.002 0 .002 0 .002.002v.002h.414l3.19 3.19.99-.99-3.19-3.19Zm-3.47 1.05a1.467 1.467 0 1 1 0-2.934 1.467 1.467 0 0 1 0 2.934Z"/><path d="M3.296 2.026a2.467 2.467 0 0 0-2.49 2.175 2.467 2.467 0 0 0 .332 1.515l3.12 3.12a2.467 2.467 0 0 0 3.896.068 2.467 2.467 0 0 0 .157-3.232L4.858 2.21A2.467 2.467 0 0 0 3.296 2.026Z"/></svg>
+                            <span data-lang-zh="谷歌学术" data-lang-en="Google Scholar">谷歌学术</span>
+                        </a>
+                    </div>
+
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <h3 class="font-bold text-gray-700" data-lang-zh="更多链接" data-lang-en="More Links">更多链接</h3>
+                        <div class="mt-3 grid grid-cols-1 gap-y-2 text-sm">
+                            <a href="https://github.com/MELABIPCAS" target="_blank" class="flex items-center text-gray-600 hover:text-blue-600 transition">
+                               <svg class="w-5 h-5 mr-2" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                <span data-lang-zh="课题组 GitHub" data-lang-en="Group GitHub">课题组 GitHub</span>
+                            </a>
+                             <a href="https://orcid.org/0000-0001-8742-8488" target="_blank" class="flex items-center text-gray-600 hover:text-blue-600 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 512 512" fill="#A4C639"><path d="M256 8C119.24 8 8 119.24 8 256s111.24 248 248 248 248-111.24 248-248S392.76 8 256 8zm-80.79 360.8h-48.42V211.53h48.42v157.27zM203.2 187.1c-16.41 0-29.72-13.33-29.72-29.72s13.31-29.71 29.72-29.71 29.72 13.32 29.72 29.71-13.31 29.72-29.72 29.72zM399.68 360.8h-48.42v-78.1c0-18.63-1.71-42.59-32.91-42.59-32.91 0-38 25.7-38 41.24v79.45h-48.42V211.53h46.5v21.36h.65c6.48-12.29 22.31-25.2 45.86-25.2 49.07 0 58.15 32.3 58.15 74.32v88.81z"/></svg>
+                                <span data-lang-zh="ORCID" data-lang-en="ORCID">ORCID</span>
+                            </a>
+                            <a href="https://www.webofscience.com/wos/author/record/AAC-9242-2022" target="_blank" class="flex items-center text-gray-600 hover:text-blue-600 transition">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>
+                                <span data-lang-zh="Web of Science" data-lang-en="Web of Science">Web of Science</span>
+                            </a>
+                            <a href="https://psych.cas.cn/sourcedb/cn/expert/202209/t20220905_6508737.html" target="_blank" class="flex items-center text-gray-600 hover:text-blue-600 transition">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg>
+                                <span data-lang-zh="单位个人主页" data-lang-en="Institutional Profile">单位个人主页</span>
+                            </a>
+                             <a href="http://melab.psych.ac.cn/" target="_blank" class="flex items-center text-gray-600 hover:text-blue-600 transition">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.0001 10.586C12.2.0001 10.586 12.0001 10.586 12.00 10.586C10.1341 10.586 8.60009 12.12 8.60009 13.986C8.60009 15.852 10.1341 17.386 12.0001 17.386C1313.8661 17.386 15.4001 15.852 15.40013.986C15.4001 12.12 13.8661 10.586 12.0001 10.586ZM12.0001 16.1186C10.7891 16.186 9.80009 15.1979.80009 13.986C9.80009 12.775 110.7891 11.786 12.0001 11.786C13.2111 11.786 14.2001 12.775 14.2001 13.986C14.2001 15.197 13.2111 16.186 12.0001 16.186Z"></path><path d="M12,2C6.477,,2,6.477,2,12s4.477,10,10,10s100-4.477,10-10S17.523,2,12,2z M12,2c-4.411,0-8-3.589-8-8s3.589-8,8-8 s8,3.589,8,8S16.411,20,12,20z"></path></svgvg>
+                                <span data-lang-zh="课题组主页" data-lang-en="Group Homepage">课题组主页</span>                           </a>
+                            <a href="#" target="_blank" class="flex items-center text-gray-600 hover:text-blue-6000 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h- mr-2" viewBox="0 0 24 24" fill="#07C160"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10c5.515 0 10-4.485 10-10S17.515 2 12 2zm4.364 7.643c.27.27.36.65.25.99s-.35.6-.68.6h-1.5c-.32 0-.58.12-.76.36s-.27.52-.27.84v.5c0 .32.09.59.27.8s.43.32.76.32h1.5c.33 0 .58.21.75.64s.17.88-.08 1.34c-1.12 2-2.8 3-5.04 3s-3.92-1-5.04-3c-.25-.46-.24-.9-.08-1.34s.42-.64.75-.64h1.5c.33 0 .59-.09.76-.27s.27-.43.27-.72v-.5c0-.32-.09-.59-.27-.84s-.44-.36-.76-.36h-1.5c-.33 0-.58-.26-.68-.6s-.02-.72.25-.99c1.12-1.12 2.6-1.71 4.45-1.71s3.33.59 4.45 1.71z"/></svg>
+                                <span data-lang-zh="课题组公众号: 中科院心理所微表情应用研究中心" data-lang-en="Group WeChat">课题组公众号</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="md:w-2/3">
+                 <section id="about" class="mb-12">
+                    <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4" data-lang-zh="关于我" data-lang-en="About Me">关于我</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p data-lang-zh="李婧婷，中国科学院心理研究所副研究员，博士生导师。获聘中国科学院心理研究所特聘骨干岗位，入选2023年中国科学院青年创新促进会成员。主持国家自然面上、青基等科研项目，于IEEE TPAMI、TAC、TIP、ICCV、ACMMM等国内外期刊、会议发表微表情相关论文多篇，两篇论文进入ESI高被引论文清单清单。相关研究成果获2023年北京市科学技术奖自然科学奖二等奖。连续四年担任ACMMM 微表情国际挑战赛主席，担任PR期刊客座编委、TPAMI、TAC、TIP、TCSVT、Neurocomputing等期刊审稿人。主要研究方向包括计算机算机视觉、情感计算，特别是智能人脸微表情分析。"
+                           data-lang-en="Jingting Li, an Associate Professor and Doctoral Supervisor at thenstitute of Psychology, Chinese Academy of Sciences (CAS). She has been appointed as a Distinguished Core Talent of the Institute and was selected as a member of the CASAS Youth Innovation Promotion Association in 2023. She has led several research projects, including those funded by the National Natural Science Foundation of China (General Program and Youth Program). She has published numerous papers on micro-expressions in top-tier domestic and international journals and conferences such as IEEE TPAMI, TAC, TIP, ICC, and ACMMM, with two papers listed as ESI Highly Cited Papers. Her research achievements were honored with a Second Prize in the 202 Beijing Municipal Natural Science Award. She has served as the chair of the ACMMM International Micro-expression Grand Challenge for four consecutive years and acts as a guest editor for journals like PRL and a reviewer for TPAMI, TAC, TIP, TCSVT, and Neurocomputing. Her main research interests include computer vision, affective computing, and particularly, intelligent facial micro-expression analysis.">
+                           李婧婷，中国科学院心理研究所副研究员，博士生导师。获聘中国科学院心理研究所所特聘骨干岗位，入选2023年中国科学院青年创新促进会成员。主持国家自然面上、青基等科研项目，于IEEETPAMI、TAC、TIP、ICCV、ACMMM等国内外期刊、会议发表微表情相关论文多篇，两篇论文进入ESI高被引论文清单。相关研究成果获2023年北京市科学技术奖自然科学奖二等奖。连续四年担任ACMMM 微表情国际挑战赛主席，担任PRL等期刊客座编委、TPAMI、TAC、TIP、TCSVT、Neurocomputing等期刊审稿人。主要研究方向包括计算机视觉、情感计算，特别是智能人脸微表情分析。
+                        </p>
+                    </div>
+                </section>
+<!--
+                <section id="news" class="mb-12">
+                    <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4" data-lang-zh="最新动态" data-lang-en="News">最新动态</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="bg-blue-500 text-white text-xs font-bold rounded-full px-2 py-1 mr-4 mt-1" data-lang-zh="奖项" data-lang-en="AWARD">奖项</span>
+                            <span class="flex-1" data-lang-zh="研究成果荣获2023年北京市科学技术奖自然科学奖二等奖。" data-lang-en="Our research received the Second Prize of the 2023 Beijing Municipal Natural Science Award.">研究成果荣获2023年北京市科学技术奖自然科学奖二等奖。</span>
+                        </li>
+                        <li class="flex items-start">
+                           <span class="bg-green-500 text-white text-xs font-bold rounded-full px-2 py-1 mr-4 mt-1" data-lang-zh="论文" data-lang-en="PAPER">论文</span>
+                           <span class="flex-1" data-lang-zh="一篇关于微表情分析的论文被 IEEE TPAMI 接收。" data-lang-en="A new paper on micro-expression analysis has been accepted by IEEE TPAMI.">一篇关于微表情分析的论文被 IEEE TPAMI 接收。</span>
+                        </li>
+                         <li class="flex items-start">
+                           <span class="bg-purple-500 text-white text-xs font-bold rounded-full px-2 py-1 mr-4 mt-1" data-lang-zh="人才" data-lang-en="TALENT">人才</span>
+                           <span class="flex-1" data-lang-zh="入选2023年中国科学院青年创新促进会会员。" data-lang-en="Selected as a member of the CAS Youth Innovation Promotion Association in 2023.">入选2023年中国科学院青年创新促进会会员。</span>
+                        </li>
+                    </ul>
+                </section>
+                -->
+
+                <section id="experience" class="mb-12">
+                    <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4" data-lang-zh="教育与工作经历" data-lang-en="Education & Experience">教育与工作经历</h2>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700">
+                        <li data-lang-zh="2022.07 - 至今: 中国科学院心理研究所, 副研究员" data-lang-en="Jul 2022 - Present: Associate Professor, Institute of Psychology, CAS">2022.07 - 至今: 中国科学院心理研究所, 副研究员</li>
+                        <li data-lang-zh="2020.02 - 2022.06: 中国科学院心理研究所, 普通博士后" data-lang-en="Feb 2020 - Jun 2022: Postdoctoral Fellow, Institute of Psychology, CAS">2020.02 - 2022.06: 中国科学院心理研究所, 普通博士后</li>
+                        <li data-lang-zh="2016.10 - 2019.12: 法国中央高等电力学校 (CentraleSupélec), 博士" data-lang-en="Oct 2016 - Dec 2019: Ph.D., CentraleSupélec, France">2016.10 - 2019.12: 法国中央高等电力学校 (CentraleSupélec), 博士</li>
+                        <li data-lang-zh="2013.09 - 2016.07: 北京航空航天大学, 硕士" data-lang-en="Sep 2013 - Jul 2016: M.S., Beihang University">2013.09 - 2016.07: 北京航空航天大学, 硕士</li>
+                        <li data-lang-zh="2009.09 - 2013.07: 北京航空航天大学, 学士" data-lang-en="Sep 2009 - Jul 2013: B.S., Beihang University">2009.09 - 2013.07: 北京航空航天大学, 学士</li>
+                    </ul>
+                </section>
+
+                <section id="projects" class="mb-12">
+                    <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4" data-lang-zh="科研项目" data-lang-en="Research Projects">科研项目</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3" data-lang-zh="主持项目" data-lang-en="As Principal Investigator">项目</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li data-lang-zh="面向特定应用场景的高生态效度微表情智能分析研究 (国家自然科学基金委员会, 面上项目), 2025-2028" data-lang-en="Research on Intelligent Micro-expression Analysis with High Ecological Validity for Specific Application Scenarios (NSFC, General Program), 2025-2028">面向特定应用场景的高生态效度微表情智能分析研究 (国家自然科学基金委员会, 面上项目), 2025-2028</li>
+                                <li data-lang-zh="基于认知注意的多分支自监督学习的微表情检测方法研究 (国家自然科学基金委员会, 青年科学基金项目), 2022-2024" data-lang-en="Micro-expression Detection via Multi-branch Self-supervised Learning Based on Cognitive Attention (NSFC, Youth Program), 2022-2024">基于认知注意的多分支自监督学习的微表情检测方法研究 (国家自然科学基金委员会, 青年科学基金项目), 2022-2024</li>
+                                <li data-lang-zh="中国科学院青年创新促进会第13批会员人才专项经费, 2023-2026" data-lang-en="Special Funding for the 13th Batch of Members of CAS Youth Innovation Promotion Association, 2023-2026">中国科学院青年创新促进会第13批会员人才专项经费, 2023-2026</li>
+                                <li data-lang-zh="谎言识别-人脸微表情分析 (中国科学院特别研究助理资助项目), 2022-2023" data-lang-en="Lie Detection - Facial Micro-expression Analysis (CAS Special Research Assistant Grant), 2022-2023">谎言识别-人脸微表情分析 (中国科学院特别研究助理资助项目), 2022-2023</li>
+                                <li data-lang-zh="基于多特征混合自监督学习模型的人脸微表情分析 (中国博士后科学基金, 第68批面上资助), 2020-2022" data-lang-en="Facial Micro-expression Analysis Based on Multi-feature Hybrid Self-supervised Learning Model (China Postdoctoral Science Foundation, 68th General Grant), 2020-2022">基于多特征混合自监督学习模型的人脸微表情分析 (中国博士后科学基金, 第68批面上资助), 2020-2022</li>
+                                <li data-lang-zh="基于面部微表情检测的谎言识别研究 (中国人民公安大学公共实验室开放课题), 2021-2022" data-lang-en="Lie Detection Research Based on Facial Micro-expression Detection (Open Project of Public Laboratory, People's Public Security University of China), 2021-2022">基于面部微表情检测的谎言识别研究 (中国人民公安大学公共实验室开放课题), 2021-2022</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3" data-lang-zh="参与项目" data-lang-en="As Participant">参与项目</h3>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li data-lang-zh="基于面部表情和面部肌电跨模态分析的微表情数据标注问题研究 (国家自然科学基金委员会, 面上项目), 2023-2026" data-lang-en="Research on Micro-expression Data Annotation via Cross-modal Analysis of Facial Expressions and Facial EMG (NSFC, General Program), 2023-2026">基于面部表情和面部肌电跨模态分析的微表情数据标注问题研究 (家自然科学基金委员会, 面上项目), 2023-2026</li>
+                                <li data-lang-zh="心理技术实验室二期专用硬件和软件开发 (国家部委), 2024-2025" data-lang-en="Phase II Hardware and Software Development for Psychological Technology Laboratory (National Ministry Project), 2024-2025">心理技术实验室二期专用硬件和软件开发 (国家部委), 2024-2025</li>
+                                <li data-lang-zh="易感特质群体快感缺失的多维特征识别与干预 (中国科学院心理研究所揭榜挂帅项目), 2022-2023" data-lang-en="Multi-dimensional Feature Identification and Intervention for Anhedonia in Vulnerable Groups (CAS Institute of Psychology 'Jiebang Guashuai' Project), 2022-2023">易感特质群体快感缺失的多维特征识别与干预 (中国科学院心理研究所揭榜挂帅项目), 2022-2023</li>
+                                <li data-lang-zh="面向社会公共安全的隐藏情绪分析与识别方法研究 (国家自然科学基金委员会, 联合基金项目), 2020-2023" data-lang-en="Analysis and Recognition of Hidden Emotions for Public Safety (NSFC, Joint Fund Project), 2020-2023">面向社会公共安全的隐藏情绪分析与识别方法研究 (国家自然科学基金委员会, 联合基金项目), 2020-2023</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="services" class="mb-12">
+                    <h2 class="text-2xl font-d border-b-2 border-blue-500 pb-2 mb-4" data-lang-zh="学术兼职" data-lang-en="Professional Services">学术兼职</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3" data-lang-zh="期刊客座编委" data-lang-en="Journal Guest Editor">期刊客座编委</h3>
+                             <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li data-lang-zh="Electronics - 'Facial-Based Emotion Recognition: Challenges and Advances in Computer Vision' 专刊, 首席客座编委 (2024至今)" data-lang-en="Electronics - Special Issue on 'Facial-Based Emotion Recognition: Challenges and Advances in Computer Vision', Lead Guest Editor (2024-Present)">Electronics - "Facial-Based Emotion Recognition: Challenges and Advances in Computer Vision" 专刊, 首席客座编委 (2024至今)</li>
+                                <li data-lang-zh="Frontiers in Robotics and AI - 'Perceiving, Generating, and Interpreting Affect in Human-Robot Interaction (HRI)' 专刊, 客座编委 (2023至今)" data-lang-en="Frontiers in Robotics and AI - Special Issue on 'Perceiving, Generating, and Interpreting Affect in Human-Robot Interaction (HRI)', Guest Editor (2023-Present)">Frontiers in Robotics and AI - “Perceiving, Generating, and Interpreting Affect in Human-Robot Interaction (HRI)”专刊, 客座编委 (2023至今)</li>
+                                <li data-lang-zh="Pattern Recognition Letters - 'Face based Emotion Understanding' 专刊, 客座编委 (2022-2023)" data-lang-en="Pattern Recognition Letters - Special Issue on 'Face based Emotion Understanding', Guest Editor (2022-2023)">Pattern Recognition Letters - "Face based Emotion Understanding" 专刊, 客座编委 (2022-2023)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-3" data-lang-zh="学会委员" data-lang-en="Committee Member">学会委员</h3>
+                             <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li data-lang-zh="中国图象图形学会 (CSIG): 机器视觉专委会委员 (2020至今), 情感计算与理解专委会委员 (2021至今), 女科技工作者委员会委员 (2023至今)" data-lang-en="China Society of Image and Graphics (CSIG): Member of Technical Committee on Machine Vision (2020-Present), Member of Technical Committee on Affectctive Computing and Understanding (2021-Present), Member of Women in Science and Technology Committee (2023-Present)">中国图象图形学会 (CS): 机器视觉专委会委员 (2020至今), 情感计算与理解专委会委员 (2021至今), 女科技工作者委员会委员 (2023至今)</li>
+                                <li data-lang-zh="中国计算机学会 (CCF): 人机交互专委会委员 (2022至今), 计算机视觉专委会委员 (2022至今)" data-lang-en="China Computer Federation (CCF): Member of Technical Committee on Human-Computer Interaction (2022-Present), Member of Technical Committee on Computer Vision (2022-Present)">中国计算机学会 (CCF): 人机交互专委会委员 (2022至今), 计算机视觉专委会委员 (2022至今)</li>
+                                <li data-lang-zh="中文信息学会 (CIPS): 情感计算专委会委员 (2024至今)" data-lang-en="Chinese Information Processing Society of China (CIPS): Member of Technical Committee on Affective Computing (2024-Present)">中文信息学会 (CIPS): 情感计算专委会委员 (2024至今)</li>
+                                <li data-lang-zh="中国人工智能学会 (CAAI): 情感智能专委会委员 (2025至今)" data-lang-en="Chinese Association for Artificial Intelligence (CAAI): Member of Technical Committee on Affective Intelligence (2025-Present)">中国人工智能学会 (CAAI): 情感智能专委会委员 (2025至今)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="publications" class="mb-12">
+                    <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4" data-lang-zh="学术出版" data-lang-en="Publications">学术出版</h2>
+                    <div class="space-y-6">
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[1] Fan, X., <strong>Li, J.</strong>, See, J., Yap, M. H., Cheng, W.-H., Li, X., Hong, X., Wang, S.-J., &amp; Davision, A. K. (2025). MEGC2025: Micro-Expression Grand Challenge on Spot Then Recognize and Visual Question Answering. <em>arXiv preprint arXiv:2506.15298</em>. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[1] Fan, X., <strong>Li, J.</strong>, See, J., Yap, M. H., Cheng, W.-H., Li, X., Hong, X., Wang, S.-J., &amp; Davision, A. K. (2025). MEGC2025: Micro-Expression Grand Challenge on Spot Then Recognize and Visual Question Answering. <em>arXiv preprint arXiv:2506.15298</em>. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[1] Fan, X., <strong>Li, J.</strong>, See, J., Yap, M. H., Cheng, W.-H., Li, X., Hong, X., Wang, S.-J., &amp; Davision, A. K. (2025). MEGC2025: Micro-Expression Grand Challenge on Spot Then Recognize and Visual Question Answering. <em>arXiv preprint arXiv:250606.15298</em>. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>                       </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[2] <strong>Li, J.</strong>, Lu, S., Wang, Y., Dong, Z., Wang, S.-J., &amp; Fu, X. (2025). Could Micro-Expressions be Quantified? Electromyography Gives Affirmative Evidence. <em>IEEE Transactions on Affective Computing, 1-16</em>. https://doi.ieeecomputersociety.org/10.1109/TAFFC.2025.3575127 <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[2] <strong>Li, J.</strong>, Lu, S., Wang, Y., Dong, Z., Wang, S.-J., &amp; Fu, X. (2025). Could Micro-Expressions be Quantified? Electromyography Gives Affirmative Evidence. <em>IEEE Transactions on Affective Computing, 1-16</em>. https://doi.ieeecomputersociety.org/10.1109/TAFFC.2025.3575127 <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[2] <strong>Li, J.</strong>, Lu, S., Wang, Y., Dong, Z., Wang, S.-J., &amp; Fu, X. (2025). Could Micro-Expressions be Quantified? Electromyography Gives Affirmative Evidence. <em>IEEE Transactions on Affective Computing, 1-16</em>. https://doi.ieeecomputersociety.org/10.1109/TAFFC.2025.3575127 <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[3] <strong>Li, J.</strong>, Wang, S.-J., Wang, Y., Zhou, H., &amp; Fu, X. (2025). Parallel Spatiotemporal Network to recognize micro-expression. <em>Neurocomputing, 636</em>, 129891. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[3] <strong>Li, J.</strong>, Wang, S.-J., Wang, Y., Zhou, H., &amp; Fu, X. (2025). Parallel Spatiotemporal Network to recognize micro-expression. <em>Neurocomputing, 636</em>, 129891. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[3] <strong>Li, J.</strong>, Wang, S.-J., Wang, Y., Zhou, H., &amp; Fu, X. (2025). Parallel Spatiotemporal Network to recognize micro-expression. <em>Neurocomputing, 636</em>, 129891. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[4] <strong>Li, J.</strong>, Zhou, H., Qian, Y., Dong, Z., &amp; Wang, S.-J. (2025). Micro-expression recognition using dual-view self-supervised contrastive learning with intensity perception. <em>Neurocomputing, 619</em>, 129142. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[4] <strong>Li, J.</strong>, Zhou, H., Qian, Y., Dong, Z., &amp; Wang, S.-J. (2025). Micro-expression recognition using dual-view self-supervised contrastive learning with intensity perception. <em>Neurocomputing, 619</em>, 129142. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[4] <strong>Li, J.</strong>, Zhou, H., Qian, Y., Dong, Z., &amp; Wang, S.-J. (2025). Micro-expression recognition using dual-view self-supervised contrastive learning with intensity perception. <em>Neurocomputing, 619</em>, 129142. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[5] Wang, S.-J., Miao, Y.-H., <strong>Li, J.</strong>, Zhou, L., Dong, Z., Sun, M., &amp; Fu, X. (2025). Micro-Expression Key Frame Inference. <em>IEEE Transactions on Affective Computing</em>. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[5] Wang, S.-J., Miao, Y.-H., <strong>Li, J.</strong>, Zhou, L., Dong, Z., Sun, M., &amp; Fu, X. (2025). Micro-Expression Key Frame Inference. <em>IEEE Transactions on Affective Computing</em>. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[5] Wang, S.-J., Miao, Y.-H., <strong>Li, J.</strong>, Zhou, L., Dong, Z., Sun, M., &amp; Fu, X. (2025). Micro-Expression Key Frame Inference. <em>IEEE Transactions on Affective Computing</em>. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[6] See, J., <strong>Li, J.</strong>, Davison, A. K., Liong, G. B., Yap, M. H., Cheng, W.-H., Li, X., Hong, X., &amp; Wang, S.-J. (2024). MEGC2024: ACM Multimedia 2024 Facial Micro-Expression Grand Challenge. In <em>Proceedings of the 32nd ACM International Conference on Multimedia</em> (pp. 11482-11483). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[6] See, J., <strong>Li, J.</strong>, Davison, A. K., Liong, G. B., Yap, M. H., Cheng, W.-H., Li, X., Hong, X., &amp; Wang, S.-J. (2024). MEGC2024: ACM Multimedia 2024 Facial Micro-Expression Grand Challenge. In <em>Proceedings of the 32nd ACM International Conference on Multimedia</em> (pp. 11482-11483). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[6] See, J., <strong>Li, J.</strong>, Davison, A. K., Liong, G. B., Yap, M. H., Cheng, W.-H., Li, X., Hong, X., &amp; Wang, S.-J. (2024). MEGC2024: ACM Multimedia 2024 Facial Micro-Expression Grand Challenge. In <em>Proceedings of the 32nd ACM International Conference on Multimedia</em> (pp. 11482-11483). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[7] Sun, Q., Hu, Y., Fan, M., <strong>Li, J.</strong>, &amp; Wang, S.-J. (2024). “Can It Be Customized According to My Motor Abilities?”: Toward Designing User-Defined Head Gestures for People with Dystonia. In <em>Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems</em> (pp. 1-11). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[7] Sun, Q., Hu, Y., Fan, M., <strong>Li, J.</strong>, &amp; Wang, S.-J. (2024). “Can It Be Customized According to My Motor Abilities?”: Toward Designing User-Defined Head Gestures for People with Dystonia. In <em>Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems</em> (pp. 1-11). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[7] Sun, Q., Hu, Y., Fan, M., <strong>Li, J.</strong>, &amp; Wang, S.-J. (2024). “Can It Be Customized According to My Motor Abilities?”: Toward Designing User-Defined Head Gestures for People with Dystonia. In <em>Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems</em> (pp. 1-11). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[8] Wang, S.-J., Wang, Y., <strong>Li, J.</strong>, Dong, Z., Zhang, J., &amp; Liu, Y. (2024). Cross-modal analysis of facial EMG in micro-expressions and data annotation algorithm. <em>Advances in Psychological Science, 32</em>(1), 1. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[8] Wang, S.-J., Wang, Y., <strong>Li, J.</strong>, Dong, Z., Zhang, J., &amp; Liu, Y. (2024). Cross-modal analysis of facial EMG in micro-expressions and data annotation algorithm. <em>Advances in Psychological Science, 32</em>(1), 1. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[8] Wang, S.-J., Wang, Y., <strong>Li, J.</strong>, Dong, Z., Zhang, J., &amp; Liu, Y. (2024). Cross-modal analysis of facial EMG in micro-expressions and data annotation algorithm. <em>Advances in Psychological Science, 32</em>(1), 1. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[9] Wang, Y., Sun, M., Kang, X., <strong>Li, J.</strong>, Guo, P., Gao, M., &amp; Wang, S.-J. (2024). CDSD: Chinese Dysarthria Speech Database. In <em>Interspeech 2024</em> (pp. 4109-4113). doi: 10.21437/Interspeech.2024-1597 <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[9] Wang, Y., Sun, M., Kang, X., <strong>Li, J.</strong>, Guo, P., Gao, M., &amp; Wang, S.-J. (2024). CDSD: Chinese Dysarthria Speech Database. In <em>Interspeech 2024</em> (pp. 4109-4113). doi: 10.21437/Interspeech.2024-1597 <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[9] Wang, Y., Sun, M., Kang, X., <strong>Li, J.</strong>, Guo, P., Gao, M., &amp; Wang, S.-J. (2024). CDSD: Chinese Dysarthria Speech Database. In <em>Interspeech 2024</em> (pp. 4109-4113). doi: 10.21437/Interspeech.2024-1597 <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[10] Davison, A. K., <strong>Li, J.</strong>, Yap, M. H., See, J., Cheng, W.-H., Li, X., Hong, X., &amp; Wang, S.-J. (2023). FME'23: 3rd Facial Micro-Expression Workshop. In <em>Proceedings of the 31st ACM International Conference on Multimedia</em> (pp. 9736-9738). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[10] Davison, A. K., <strong>Li, J.</strong>, Yap, M. H., See, J., Cheng, W.-H., Li, X., Hong, X., &amp; Wang, S.-J. (2023). FME'23: 3rd Facial Micro-Expression Workshop. In <em>Proceedings of the 31st ACM International Conference on Multimedia</em> (pp. 9736-9738). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[10] Davison, A. K., <strong>Li, J.</strong>, Yap, M. H., See, J., Cheng, W.-H., Li, X., Hong, X., &amp; Wang, S.-J. (2023). FME'23: 3rd Facial Micro-Expression Workshop. In <em>Proceedings of the 31st ACM International Conference on Multimedia</em> (pp. 9736-9738). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[11] Davison, A. K., <strong>Li, J.</strong>, Yap, M. H., See, J., Cheng, W.-H., Li, X., Hong, X., &amp; Wang, S.-J. (2023). Megc2023: Acm multimedia 2023 me grand challenge. In <em>Proceedings of the 31st ACM International Conference on Multimedia</em> (pp. 9625-9629). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[11] Davison, A. K., <strong>Li, J.</strong>, Yap, M. H., See, J., Cheng, W.-H., Li, X., Hong, X., &amp; Wang, S.-J. (2023). Megc2023: Acm multimedia 2023 me grand challenge. In <em>Proceedings of the 31st ACM International Conference on Multimedia</em> (pp. 9625-9629). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[11] Davison, A. K., <strong>Li, J.</strong>, Yap, M. H., See, J., Cheng, W.-H., Li, X., Hong, X., &amp; Wang, S.-J. (2023). Megc2023: Acm multimedia 2023 me grand challenge. In <em>Proceedings of the 31st ACM International Conference on Multimedia</em> (pp. 9625-9629). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[12] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., &amp; Wang, S.-J. (2023). Editorial for pattern recognition letters special issue on face-based emotion understanding. <em>Pattern Recognition Letters</em>. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[12] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., &amp; Wang, S.-J. (2023). Editorial for pattern recognition letters special issue on face-based emotion understanding. <em>Pattern Recognition Letters</em>. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[12] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., &amp; Wang, S.-J. (2023). Editorial for pattern recognition letters special issue on face-based emotion understanding. <em>Pattern Recognition Letters</em>. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[13] Yang, X., Yang, H., <strong>Li, J.</strong>, &amp; Wang, S.-J. (2023). Simple but effective in-the-wild micro-expression spotting based on head pose segmentation. In <em>Proceedings of the 3rd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis</em> (pp. 9-16). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[13] Yang, X., Yang, H., <strong>Li, J.</strong>, &amp; Wang, S.-J. (2023). Simple but effective in-the-wild micro-expression spotting based on head pose segmentation. In <em>Proceedings of the 3rd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis</em> (pp. 9-16). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[13] Yang, X., Yang, H., <strong>Li, J.</strong>, &amp; Wang, S.-J. (2023). Simple but effective in-the-wild micro-expression spotting based on head pose segmentation. In <em>Proceedings of the 3rd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis</em> (pp. 9-16). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[14] Zhang, J., Huang, S., <strong>Li, J.</strong>, Wang, Y., Dong, Z., &amp; Wang, S.-J. (2023). A perifacial EMG acquisition system for facial-muscle-movement recognition. <em>Sensors, 23</em>(21), 8758. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[14] Zhang, J., Huang, S., <strong>Li, J.</strong>, Wang, Y., Dong, Z., &amp; Wang, S.-J. (2023). A perifacial EMG acquisition system for facial-muscle-movement recognition. <em>Sensors, 23</em>(21), 8758. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[14] Zhang, J., Huang, S., <strong>Li, J.</strong>, Wang, Y., Dong, Z., &amp; Wang, S.-J. (2023). A perifacial EMG acquisition system for facial-muscle-movement recognition. <em>Sensors, 23</em>(21), 8758. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[15] Zhou, H., Huang, S., <strong>Li, J.</strong>, &amp; Wang, S.-J. (2023). Dual-ATME: Dual-Branch Attention Network for Micro-Expression Recognition. <em>Entropy, 25</em>(3), 460. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[15] Zhou, H., Huang, S., <strong>Li, J.</strong>, &amp; Wang, S.-J. (2023). Dual-ATME: Dual-Branch Attention Network for Micro-Expression Recognition. <em>Entropy, 25</em>(3), 460. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[15] Zhou, H., Huang, S., <strong>Li, J.</strong>, &amp; Wang, S.-J. (2023). Dual-ATME: Dual-Branch Attention Network for Micro-Expression Recognition. <em>Entropy, 25</em>(3), 460. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[16] Dong, Z., Wang, G., Lu, S., <strong>Li, J.</strong>, Yan, W., &amp; Wang, S.-J. (2022). Spontaneous facial expressions and micro-expressions coding: from brain to face. <em>Frontiers in Psychology, 12</em>, 784834. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[16] Dong, Z., Wang, G., Lu, S., <strong>Li, J.</strong>, Yan, W., &amp; Wang, S.-J. (2022). Spontaneous facial expressions and micro-expressions coding: from brain to face. <em>Frontiers in Psychology, 12</em>, 784834. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[16] Dong, Z., Wang, G., Lu, S., <strong>Li, J.</strong>, Yan, W., &amp; Wang, S.-J. (2022). Spontaneous facial expressions and micro-expressions coding: from brain to face. <em>Frontiers in Psychology, 12</em>, 784834. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[17] <strong>Li, J.</strong>, Dong, Z., Lu, S., Wang, S.-J., Yan, W.-J., Ma, Y., Liu, Y., Huang, C., &amp; Fu, X. (2022). CAS (ME) 3: A third generation facial spontaneous micro-expression database with depth information and high ecological validity. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence, 45</em>(3), 2782-2800. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[17] <strong>Li, J.</strong>, Dong, Z., Lu, S., Wang, S.-J., Yan, W.-J., Ma, Y., Liu, Y., Huang, C., &amp; Fu, X. (2022). CAS (ME) 3: A third generation facial spontaneous micro-expression database with depth information and high ecological validity. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence, 45</em>(3), 2782-2800. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[17] <strong>Li, J.</strong>, Dong, Z., Lu, S., Wang, S.-J., Yan, W.-J., Ma, Y., Liu, Y., Huang, C., &amp; Fu, X. (2022). CAS (ME) 3: A third generation facial spontaneous micro-expression database with depth information and high ecological validity. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence, 45</em>(3), 2782-2800. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[18] <strong>Li, J.</strong>, Wang, T., &amp; Wang, S.-J. (2022). Facial micro-expression recognition based on deep local-holistic network. <em>Applied Sciences, 12</em>(9), 4643. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[18] <strong>Li, J.</strong>, Wang, T., &amp; Wang, S.-J. (2022). Facial micro-expression recognition based on deep local-holistic network. <em>Applied Sciences, 12</em>(9), 4643. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[18] <strong>Li, J.</strong>, Wang, T., &amp; Wang, S.-J. (2022). Facial micro-expression recognition based on deep local-holistic network. <em>Applied Sciences, 12</em>(9), 4643. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[19] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., &amp; Wang, S.-J. (2022). FME'22: 2nd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis. In <em>Proceedings of the 30th ACM International Conference on Multimedia</em> (pp. 7397-7399). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[19] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., &amp; Wang, S.-J. (2022). FME'22: 2nd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis. In <em>Proceedings of the 30th ACM International Conference on Multimedia</em> (pp. 7397-7399). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[19] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., &amp; Wang, S.-J. (2022). FME'22: 2nd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis. In <em>Proceedings of the 30th ACM International Conference on Multimedia</em> (pp. 7397-7399). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[20] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., Wang, S.-J., Davison, A. K., Li, Y., &amp; Dong, Z. (2022). MEGC2022: ACM multimedia 2022 micro-expression grand challenge. In <em>Proceedings of the 30th ACM International Conference on Multimedia</em> (pp. 7170-7174). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[20] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., Wang, S.-J., Davison, A. K., Li, Y., &amp; Dong, Z. (2022). MEGC2022: ACM multimedia 2022 micro-expression grand challenge. In <em>Proceedings of the 30th ACM International Conference on Multimedia</em> (pp. 7170-7174). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[20] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., Wang, S.-J., Davison, A. K., Li, Y., &amp; Dong, Z. (2022). MEGC2022: ACM multimedia 2022 micro-expression grand challenge. In <em>Proceedings of the 30th ACM International Conference on Multimedia</em> (pp. 7170-7174). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[21] Lu, S., <strong>Li, J.</strong>, Wang, Y., Dong, Z., Wang, S.-J., &amp; Fu, X. (2022). A more objective quantification of micro-expression intensity through facial electromyography. In <em>Proceedings of the 2nd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis</em> (pp. 11-17). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[21] Lu, S., <strong>Li, J.</strong>, Wang, Y., Dong, Z., Wang, S.-J., &amp; Fu, X. (2022). A more objective quantification of micro-expression intensity through facial electromyography. In <em>Proceedings of the 2nd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis</em> (pp. 11-17). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[21] Lu, S., <strong>Li, J.</strong>, Wang, Y., Dong, Z., Wang, S.-J., &amp; Fu, X. (2022). A more objective quantification of micro-expression intensity through facial electromyography. In <em>Proceedings of the 2nd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis</em> (pp. 11-17). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[22] Lu, S., <strong>Li, J.</strong>, Dong, Z., Wang, G., Li, Z., Ma, Y., Wang, S.-J., &amp; Zhuang, D. (2022). 一项实证研究：高风险场景下微表情大概率出现的论证 (An Empirical Study: The Demonstration of High Probability of Micro-Expressions in High-Stakes Scenario). <em>中国人民公安大学学报(自然科学版) (Journal of People's Public Security University of China(Science and Technology)), 28</em>(03), 23-31. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[22] Lu, S., <strong>Li, J.</strong>, Dong, Z., Wang, G., Li, Z., Ma, Y., Wang, S.-J., &amp; Zhuang, D. (2022). An Empirical Study: The Demonstration of High Probability of Micro-Expressions in High-Stakes Scenario. <em>Journal of People's Public Security University of China(Science and Technology), 28</em>(03), 23-31. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[22] Lu, S., <strong>Li, J.</strong>, Dong, Z., Wang, G., Li, Z., Ma, Y., Wang, S.-J., &amp; Zhuang, D. (2022). 一项实证研究：高风险场景下微表情大概率出现的论证 (An Empirical Study: The Demonstration of High Probability of Micro-Expressions in High-Stakes Scenario). <em>中国人民公安大学学报(自然科学版) (Journal of People's Public Security University of China(Science and Technology)), 28</em>(03), 23-31. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[23] Yap, C. H., Yap, M. H., Davison, A., Kendrick, C., <strong>Li, J.</strong>, Wang, S.-J., &amp; Cunningham, R. (2022). 3d-cnn for facial micro-and macro-expression spotting on long video sequences using temporal oriented reference frame. In <em>Proceedings of the 30th ACM International Conference on Multimedia</em> (pp. 7016-7020). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[23] Yap, C. H., Yap, M. H., Davison, A., Kendrick, C., <strong>Li, J.</strong>, Wang, S.-J., &amp; Cunningham, R. (2022). 3d-cnn for facial micro-and macro-expression spotting on long video sequences using temporal oriented reference frame. In <em>Proceedings of the 30th ACM International Conference on Multimedia</em> (pp. 7016-7020). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[23] Yap, C. H., Yap, M. H., Davison, A., Kendrick, C., <strong>Li, J.</strong>, Wang, S.-J., &amp; Cunningham, R. (2022). 3d-cnn for facial micro-and macro-expression spotting on long video sequences using temporal oriented reference frame. In <em>Proceedings of the 30th ACM International Conference on Multimedia</em> (pp. 7016-7020). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[24] <strong>李婧婷</strong>, 东子朝, 刘烨, 王甦菁, &amp; 庄东哲. (2022). 基于人类注意机制的微表情检测方法. <em>心理科学进展, 30</em>(10), 2143. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[24] <strong>Li, J.</strong>, Dong, Z., Liu, Y., Wang, S.-J., &amp; Zhuang, D. (2022). Micro-expression spotting method based on human attention mechanism. <em>Advances in Psychological Science, 30</em>(10), 2143. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[24] <strong>李婧婷</strong>, 东子朝, 刘烨, 王甦菁, &amp; 庄东哲. (2022). 基于人类注意机制的微表情检测方法. <em>心理科学进展, 30</em>(10), 2143. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[25] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., &amp; Wang, S.-J. (2021). FME'21: 1st workshop on facial micro-expression: advanced techniques for facial expressions generation and spotting. In <em>Proceedings of the 29th ACM International Conference on Multimedia</em> (pp. 5700-5701). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[25] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., &amp; Wang, S.-J. (2021). FME'21: 1st workshop on facial micro-expression: advanced techniques for facial expressions generation and spotting. In <em>Proceedings of the 29th ACM International Conference on Multimedia</em> (pp. 5700-5701). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[25] <strong>Li, J.</strong>, Yap, M. H., Cheng, W.-H., See, J., Hong, X., Li, X., &amp; Wang, S.-J. (2021). FME'21: 1st workshop on facial micro-expression: advanced techniques for facial expressions generation and spotting. In <em>Proceedings of the 29th ACM International Conference on Multimedia</em> (pp. 5700-5701). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[26] Wang, S.-J., He, Y., <strong>Li, J.</strong>, &amp; Fu, X. (2021). MESNet: A convolutional neural network for spotting multi-scale micro-expression intervals in long videos. <em>IEEE Transactions on Image Processing, 30</em>, 3956-3969. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[26] Wang, S.-J., He, Y., <strong>Li, J.</strong>, &amp; Fu, X. (2021). MESNet: A convolutional neural network for spotting multi-scale micro-expression intervals in long videos. <em>IEEE Transactions on Image Processing, 30</em>, 3956-3969. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[26] Wang, S.-J., He, Y., <strong>Li, J.</strong>, &amp; Fu, X. (2021). MESNet: A convolutional neural network for spotting multi-scale micro-expression intervals in long videos. <em>IEEE Transactions on Image Processing, 30</em>, 3956-3969. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[27] He, Y., Wang, S.-J., <strong>Li, J.</strong>, &amp; Yap, M. H. (2020). Spotting macro-and micro-expression intervals in long video sequences. In <em>2020 15th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2020)</em> (pp. 742-748). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[27] He, Y., Wang, S.-J., <strong>Li, J.</strong>, &amp; Yap, M. H. (2020). Spotting macro-and micro-expression intervals in long video sequences. In <em>2020 15th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2020)</em> (pp. 742-748). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[27] He, Y., Wang, S.-J., <strong>Li, J.</strong>, &amp; Yap, M. H. (2020). Spotting macro-and micro-expression intervals in long video sequences. In <em>2020 15th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2020)</em> (pp. 742-748). IEEE. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[28] <strong>Li, J.</strong>, Wang, S.-J., Yap, M. H., See, J., Hong, X., &amp; Li, X. (2020). Megc2020-the third facial micro-expression grand challenge. In <em>2020 15th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2020)</em> (pp. 777-780). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[28] <strong>Li, J.</strong>, Wang, S.-J., Yap, M. H., See, J., Hong, X., &amp; Li, X. (2020). Megc2020-the third facial micro-expression grand challenge. In <em>2020 15th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2020)</em> (pp. 777-780). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[28] <strong>Li, J.</strong>, Wang, S.-J., Yap, M. H., See, J., Hong, X., &amp; Li, X. (2020). Megc2020-the third facial micro-expression grand challenge. In <em>2020 15th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2020)</em> (pp. 777-780). IEEE. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[29] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2020). Local temporal pattern and data augmentation for spotting micro-expressions. <em>IEEE Transactions on Affective Computing, 14</em>(1), 811-822. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[29] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2020). Local temporal pattern and data augmentation for spotting micro-expressions. <em>IEEE Transactions on Affective Computing, 14</em>(1), 811-822. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[29] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2020). Local temporal pattern and data augmentation for spotting micro-expressions. <em>IEEE Transactions on Affective Computing, 14</em>(1), 811-822. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[30] Zhang, L.-W., <strong>Li, J.</strong>, Wang, S.-J., Duan, X.-H., Yan, W.-J., Xie, H.-Y., &amp; Huang, S.-C. (2020). Spatio-temporal fusion for macro-and micro-expression spotting in long video sequences. In <em>2020 15th IEEE international conference on automatic face and gesture recognition (FG 2020)</em> (pp. 734-741). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[30] Zhang, L.-W., <strong>Li, J.</strong>, Wang, S.-J., Duan, X.-H., Yan, W.-J., Xie, H.-Y., &amp; Huang, S.-C. (2020). Spatio-temporal fusion for macro-and micro-expression spotting in long video sequences. In <em>2020 15th IEEE international conference on automatic face and gesture recognition (FG 2020)</em> (pp. 734-741). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[30] Zhang, L.-W., <strong>Li, J.</strong>, Wang, S.-J., Duan, X.-H., Yan, W.-J., Xie, H.-Y., &amp; Huang, S.-C. (2020). Spatio-temporal fusion for macro-and micro-expression spotting in long video sequences. In <em>2020 15th IEEE international conference on automatic face and gesture recognition (FG 2020)</em> (pp. 734-741). IEEE. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[31] <strong>Li, J.</strong> (2019). <em>Facial Micro-Expression Analysis</em> [Doctoral dissertation, CentraleSupélec]. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[31] <strong>Li, J.</strong> (2019). <em>Facial Micro-Expression Analysis</em> [Doctoral dissertation, CentraleSupélec]. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[31] <strong>Li, J.</strong> (2019). <em>Facial Micro-Expression Analysis</em> [Doctoral dissertation, CentraleSupélec]. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[32] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2019). A Survey on Databases for Facial Micro-Expression Analysis. In <em>VISIGRAPP (5: VISAPP)</em> (pp. 241-248). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[32] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2019). A Survey on Databases for Facial Micro-Expression Analysis. In <em>VISIGRAPP (5: VISAPP)</em> (pp. 241-248). <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[32] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2019). A Survey on Databases for Facial Micro-Expression Analysis. In <em>VISIGRAPP (5: VISAPP)</em> (pp. 241-248). <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[33] <strong>Li, J.</strong>, Soladie, C., Séguier, R., Wang, S.-J., &amp; Yap, M. H. (2019). Spotting micro-expressions on long videos sequences. In <em>2019 14th IEEE International conference on automatic face &amp; gesture recognition (FG 2019)</em> (pp. 1-5). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[33] <strong>Li, J.</strong>, Soladie, C., Séguier, R., Wang, S.-J., &amp; Yap, M. H. (2019). Spotting micro-expressions on long videos sequences. In <em>2019 14th IEEE International conference on automatic face &amp; gesture recognition (FG 2019)</em> (pp. 1-5). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[33] <strong>Li, J.</strong>, Soladie, C., Séguier, R., Wang, S.-J., &amp; Yap, M. H. (2019). Spotting micro-expressions on long videos sequences. In <em>2019 14th IEEE International conference on automatic face &amp; gesture recognition (FG 2019)</em> (pp. 1-5). IEEE. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[34] See, J., Yap, M. H., <strong>Li, J.</strong>, Hong, X., &amp; Wang, S.-J. (2019). Megc 2019--the second facial micro-expressions grand challenge. In <em>2019 14th IEEE International Conference on Automatic Face &amp; Gesture Recognition (FG 2019)</em> (pp. 1-5). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[34] See, J., Yap, M. H., <strong>Li, J.</strong>, Hong, X., &amp; Wang, S.-J. (2019). Megc 2019--the second facial micro-expressions grand challenge. In <em>2019 14th IEEE International Conference on Automatic Face &amp; Gesture Recognition (FG 2019)</em> (pp. 1-5). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[34] See, J., Yap, M. H., <strong>Li, J.</strong>, Hong, X., &amp; Wang, S.-J. (2019). Megc 2019--the second facial micro-expressions grand challenge. In <em>2019 14th IEEE International Conference on Automatic Face &amp; Gesture Recognition (FG 2019)</em> (pp. 1-5). IEEE. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[35] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2018). Détection de Micro-expressions par Reconnaissance de Motif Local Temporel de Mouvements Faciaux. In <em>Reconnaissance des Formes, Image, Apprentissage et Perception</em>. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[35] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2018). Détection de Micro-expressions par Reconnaissance de Motif Local Temporel de Mouvements Faciaux. In <em>Reconnaissance des Formes, Image, Apprentissage et Perception</em>. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[35] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2018). Détection de Micro-expressions par Reconnaissance de Motif Local Temporel de Mouvements Faciaux. In <em>Reconnaissance des Formes, Image, Apprentissage et Perception</em>. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[36] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2018). Ltp-ml: Micro-expression detection by recognition of local temporal pattern of facial movements. In <em>2018 13th IEEE international conference on automatic face &amp; gesture recognition (FG 2018)</em> (pp. 634-641). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[36] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2018). Ltp-ml: Micro-expression detection by recognition of local temporal pattern of facial movements. In <em>2018 13th IEEE international conference on automatic face &amp; gesture recognition (FG 2018)</em> (pp. 634-641). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[36] <strong>Li, J.</strong>, Soladie, C., &amp; Seguier, R. (2018). Ltp-ml: Micro-expression detection by recognition of local temporal pattern of facial movements. In <em>2018 13th IEEE international conference on automatic face &amp; gesture recognition (FG 2018)</em> (pp. 634-641). IEEE. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[37] Weber, R., <strong>Li, J.</strong>, Soladié, C., &amp; Séguier, R. (2018). A survey on databases of facial macro-expression and micro-expression. In <em>International Joint Conference on Computer Vision, Imaging and Computer Graphics</em> (pp. 298-325). Springer International Publishing. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[37] Weber, R., <strong>Li, J.</strong>, Soladié, C., &amp; Séguier, R. (2018). A survey on databases of facial macro-expression and micro-expression. In <em>International Joint Conference on Computer Vision, Imaging and Computer Graphics</em> (pp. 298-325). Springer International Publishing. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[37] Weber, R., <strong>Li, J.</strong>, Soladié, C., &amp; Séguier, R. (2018). A survey on databases of facial macro-expression and micro-expression. In <em>International Joint Conference on Computer Vision, Imaging and Computer Graphics</em> (pp. 298-325). Springer International Publishing. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[38] <strong>Li, J. T.</strong>, Xu, H. P., Shan, L., Liu, W., &amp; Chen, G. Z. (2016). An efficient compressive sensing based PS-DInSAR method for surface deformation estimation. <em>Measurement Science and Technology, 27</em>(11), 114001. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[38] <strong>Li, J. T.</strong>, Xu, H. P., Shan, L., Liu, W., &amp; Chen, G. Z. (2016). An efficient compressive sensing based PS-DInSAR method for surface deformation estimation. <em>Measurement Science and Technology, 27</em>(11), 114001. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[38] <strong>Li, J. T.</strong>, Xu, H. P., Shan, L., Liu, W., &amp; Chen, G. Z. (2016). An efficient compressive sensing based PS-DInSAR method for surface deformation estimation. <em>Measurement Science and Technology, 27</em>(11), 114001. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                        <div class="publication-item">
+                            <p data-lang-zh="[39] <strong>Li, J.</strong>, &amp; Xu, H. (2015). PS-DInSAR deformation velocity estimation by the compressive sensing. In <em>2015 IEEE International Conference on Imaging Systems and Techniques (IST)</em> (pp. 1-5). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>" data-lang-en="[39] <strong>Li, J.</strong>, &amp; Xu, H. (2015). PS-DInSAR deformation velocity estimation by the compressive sensing. In <em>2015 IEEE International Conference on Imaging Systems and Techniques (IST)</em> (pp. 1-5). IEEE. <span class=&quot;publication-links&quot;><a href=&quot;#&quot; target=&quot;_blank&quot;>[ PDF ]</a></span>">[39] <strong>Li, J.</strong>, &amp; Xu, H. (2015). PS-DInSAR deformation velocity estimation by the compressive sensing. In <em>2015 IEEE International Conference on Imaging Systems and Techniques (IST)</em> (pp. 1-5). IEEE. <span class="publication-links"><a href="#" target="_blank">[ PDF ]</a></span></p>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-16 border-t">
+        <div class="container mx-auto px-6 py-4 text-center text-sm text-gray-500">
+            &copy; <span id="year"></span> <span data-lang-zh="李婧婷" data-lang-en="Jingting Li">李婧婷</span>.
+            <span data-lang-zh="版权所有。" data-lang-en="All Rights Reserved.">版权所有。</span>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const langSwitcher = document.getElementById('lang-switcher');
+            const htmlEl = document.documentElement;
+            const translatableElements = document.querySelectorAll('[data-lang-zh], [data-lang-en]');
+
+            const switchLanguage = (lang) => {
+                htmlEl.lang = lang;
+                translatableElements.forEach(el => {
+                    const text = el.getAttribute(`data-lang-${lang}`);
+                    if (text !== null) {
+                        // Use innerHTML to correctly render nested tags like <strong> or the new link spans
+                         if (el.innerHTML.includes('<') || text.includes('<')) {
+                            el.innerHTML = text;
+                        } else {
+                            el.textContent = text;
+                        }
+                    }
+                });
+                langSwitcher.textContent = lang === 'zh' ? 'English' : '中文';
+                localStorage.setItem('preferredLanguage', lang);
+            };
+
+            langSwitcher.addEventListener('click', () => {
+                const newLang = htmlEl.lang === 'zh' ? 'en' : 'zh';
+                switchLanguage(newLang);
+            });
+
+            // Set initial language based on saved preference or default
+            const savedLang = localStorage.getItem('preferredLanguage') || 'zh';
+            switchLanguage(savedLang);
+
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
