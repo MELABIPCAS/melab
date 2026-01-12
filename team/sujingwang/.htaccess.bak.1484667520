@@ -1,0 +1,16 @@
+# Use PHP7 Single php.ini as default
+AddHandler application/x-httpd-php70s .php
+
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AddHandler application/x-httpd-php5s .php
+AuthName sujingwang.name
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
