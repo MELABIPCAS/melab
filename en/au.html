@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MELAB | AU Guide</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <style>
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:stretch}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+    .big{font-size:40px;line-height:1.1;margin:0 0 10px}
+    .subtitle{margin:0 0 14px;color:var(--muted)}
+    .pill{display:inline-block;margin-right:8px;margin-top:6px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--text);font-size:13px;text-decoration:none}
+    .content img{max-width:100%;height:auto;border-radius:12px;border:1px solid var(--border)}
+    .au-table{width:100%;border-collapse:collapse}
+    .au-table th,.au-table td{border:1px solid var(--border);padding:10px;vertical-align:top}
+    .au-table th{background:rgba(255,255,255,.03)}
+    video{width:260px;max-width:100%;border-radius:12px;border:1px solid var(--border)}
+    .speed{margin-top:8px;display:flex;align-items:center;gap:10px}
+    .speed input{width:160px}
+    .muted{color:var(--muted)}
+    .section{scroll-margin-top:90px}
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- Navigation -->
+  <div class="nav">
+    <div class="brand">
+      <img src="../assets/img/melab_logo.png" alt="MELAB Logo">
+      <span>MELAB</span>
+    </div>
+
+    <div class="navlinks">
+      <a href="./index.html">Home</a>
+      <a href="./team.html">Team</a>
+      <a href="./au.html">AU Guide</a>
+      <a href="./databases.html">Database</a>
+      <div class="lang">
+        <a class="btn" data-lang-btn="zh">中文</a>
+        <a class="btn active" data-lang-btn="en">EN</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-grid">
+      <div class="card">
+        <h1 class="big">Action Units (AU) Guide</h1>
+        <p class="subtitle">
+          Facial Action Coding System (FACS): Action Unit illustrations and coding reference
+        </p>
+
+        <div>
+          <a class="pill" href="#muscle">Facial Muscles</a>
+          <a class="pill" href="#au-list">AU Gallery</a>
+          <a class="pill" href="#coding-guide">Coding Guide</a>
+          <a class="pill" href="#ref">References</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Tips</h3>
+        <ul class="muted" style="padding-left:18px;line-height:1.8">
+          <li>Use the index pills to jump to sections.</li>
+          <li>Each AU video supports independent speed control.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- Muscle -->
+    <section id="muscle" class="card section">
+      <h2>Facial Muscles and Action Units</h2>
+      <img src="../assets/img/muscle-map_en.png" alt="Facial muscle map">
+    </section>
+
+    <!-- AU Table -->
+    <section id="au-list">
+      <h2>AU Illustration List</h2>
+
+      <table class="au-table">
+        <thead>
+          <tr>
+            <th>AU</th>
+            <th>Video</th>
+            <th>Action Description (FACS)</th>
+            <th>Common Emotional Associations</th>
+          </tr>
+        </thead>
+<tbody>
+  <tr>
+    <td class="tg-7ab7">1</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU1_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Inner Brow Raiser</td>
+    <td class="tg-7ab7">Disgust, Surprise, Happiness, Fear、Sadness</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">2</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU2_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Outer Brow Raiser</td>
+    <td class="tg-7ab7">Surprise</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">4</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU4_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7"> Brow Lowerer</td>
+    <td class="tg-7ab7">Sadness, Fear, Anger, Disgust</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">5</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU5_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Upper Lid Raiser</td>
+    <td class="tg-7ab7">Anger, Surprise, Fear</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">6</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU6_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Cheek Raiser</td>
+    <td class="tg-7ab7">Happiness</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">7</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU7_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lid Tightener</td>
+    <td class="tg-7ab7">Disgust</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">9</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU9_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Nose Wrinkler</td>
+    <td class="tg-7ab7">Disgust, Anger</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">10</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU10_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Upper Lip Raiser</td>
+    <td class="tg-7ab7">Disgust, Anger</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">11</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU11_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Nasolabial Deepener</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">12</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU12_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lip Corner Puller</td>
+    <td class="tg-7ab7">Happiness</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">13</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU13_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Cheek Puffer</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">14</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU14_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Dimpler</td>
+    <td class="tg-7ab7">Disgust,Happiness, Sadness</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">15</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU15_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lip Corner Depressor</td>
+    <td class="tg-7ab7">Sadness, Disgust</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">16</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU16_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lower Lip Depressor</td>
+    <td class="tg-7ab7">Anger</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">17</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU17_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Chin Raiser</td>
+    <td class="tg-7ab7">Disgust</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">18</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU18_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lip Puckerer</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">20</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU20_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lip stretcher</td>
+    <td class="tg-7ab7">Fear</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">22</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU22_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+></td>
+    <td class="tg-7ab7">Lip Funneler</td>
+    <td class="tg-7ab7">Anger</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">23</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU23_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lip Tightener</td>
+    <td class="tg-7ab7">Anger</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">24</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU24_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lip Pressor</td>
+    <td class="tg-7ab7">Digust</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">25</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU25_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lips part</td>
+    <td class="tg-7ab7">Fear, Surprise, Disgust</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">26</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU26_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Jaw Drop</td>
+    <td class="tg-7ab7">Surprise, Happiness</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">27</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU27_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Mouth Stretch</td>
+    <td class="tg-7ab7">Surprise, Happiness</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">28</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU28_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lip Suck</td>
+    <td class="tg-7ab7">Happiness</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">41</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU41_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Lid droop</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">42</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU42_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Slit</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">43</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU43_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Eyes Closed</td>
+    <td class="tg-7ab7">Sadness</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">44</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU44_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Squint</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">45</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU45_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Blink</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">46</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU46_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">Wink</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+</tbody>
+      </table>
+    </section>
+
+    <!-- Coding Guide -->
+    <section id="coding-guide" class="card section">
+      <h2>Basic Coding Guidelines for micro-expression</h2>
+      <ul>
+         <li>When corners of lips pulled up (AU12) appears, it can be coded as a positive emotion, i.e., happy; In addition, cheek rise (AU6), lip suck (AU28) are both happy specific action units and can also be coded as positive emotions;</li>
+        <li>When brow rise (AU2) is present, it can be coded as surprise;</li>
+        <li>When frown (AU4) is present, it can be coded as a negative emotion;</li>
+        <li>It can be coded as anger when gnashing (AU16, AU22 or AU23), which only occur in the specific action units, appear;</li>
+        <li>When movements of the eyebrows (AU1 and AU4), eyes (AU5) and mouth (AU25) are present simultaneously, they can be coded as fear;</li>
+        <li>It can be coded as disgusted when the specific action unit of disgust, lower eyelid rise (AU7), mouth tightly closed (AU24), is present;</li>
+<li>It can be coded as sad when frown (AU4) and eyes wide open (AU5) are present at the same time; eyes closed (AU43) is the specific action unit for sadness and can also be coded as sadness.
+</li>
+      </ul>
+    </section>
+
+    <!-- Reference -->
+    <section id="ref" class="card section">
+      <h2>References</h2>
+     <p>Dong, Z., Wang, G., Lu, S., Li, J., Yan, W., & Wang, S. J. (2022). Spontaneous Facial Expressions and Micro-expressions Coding: From Brain to Face. <i>Frontiers in Psychology</i>, 5808.</p>
+
+    </section>
+
+  </div>
+
+  <div class="footer">
+    © <span id="y"></span> MELAB · Powered by GitHub Pages
+  </div>
+
+</div>
+
+<script src="../assets/js/lang.js"></script>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MELAB | AU Guide</title>
+
+  <!-- 与 index 风格一致：引入全站样式 -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <!-- 本页补充：表格/视频在新样式下的最小必要样式 -->
+  <style>
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:stretch}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+    .big{font-size:40px;line-height:1.1;margin:0 0 10px}
+    .subtitle{margin:0 0 14px;color:var(--muted)}
+    .pill{display:inline-block;margin-right:8px;margin-top:6px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--text);font-size:13px;text-decoration:none}
+    .content img{max-width:100%;height:auto;border-radius:12px;border:1px solid var(--border)}
+    .au-table{width:100%;border-collapse:collapse;overflow:hidden}
+    .au-table th,.au-table td{border:1px solid var(--border);padding:10px;vertical-align:top}
+    .au-table th{color:var(--text);background:rgba(255,255,255,.03)}
+    video{width:260px;max-width:100%;height:auto;border-radius:12px;border:1px solid var(--border);background:#000}
+    .speed{margin-top:8px;display:flex;align-items:center;gap:10px}
+    .speed input[type="range"]{width:160px}
+    .muted{color:var(--muted)}
+    .section{scroll-margin-top:90px}
+  </style>
+</head>
+
+
+<body>
+<div class="container">
+  <div class="nav">
+    <div class="brand">
+      <img src="../assets/img/melab_logo.png" alt="MELAB Logo">
+  <span>MELAB</span>
+    </div>
+
+   <div class="navlinks">
+      <a href="./index.html">首页</a>
+      <a href="./team.html">团队成员</a>
+      <a href="./au.html">AU介绍</a>
+      <a href="./databases.html">数据库申请</a>
+      <div class="lang">
+        <a href="javascript:void(0)" class="btn" data-lang-btn="zh" data-lang-link="zh">中文</a>
+        <a href="javascript:void(0)" class="btn" data-lang-btn="en" data-lang-link="en">EN</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-grid">
+      <div class="card">
+        <h1 class="big">AU 指南</h1>
+        <p class="subtitle">面部动作单元（Action Units (AU)） 示意图与编码指南</p>
+
+        <!-- 本页索引（锚点） -->
+        <div>
+          <a class="pill" href="#muscle">面部肌肉</a>
+          <a class="pill" href="#au-list">AU示意图列表</a>
+          <a class="pill" href="#coding-guide">编码指南</a>
+          <a class="pill" href="#ref">参考文献</a>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <h3>使用小技巧</h3>
+        <ul class="muted" style="margin:0;padding-left:18px;line-height:1.8">
+          <li>利用按键快速跳转对应小节.</li>
+          <li>每个样例视频均可以调整播放速度.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+
+
+ <section id="muscle" class="card section">
+  <h2>面部肌肉、面部动作单元（AU）与情绪的关系图</h2>
+  <img id="muscle-map" src="../assets/img/muscle-map.png" alt="肌肉对应图">
+</section>
+
+
+     <section id = "au-list">
+
+
+ <h2>AU示意图列表</h2>
+<table class="au-table">
+<thead>
+  <tr>
+    <th class="tg-7ab7">AU</th>
+    <th class="tg-7ab7">动图</th>
+    <th class="tg-7ab7">动作描述（解释）</th>
+    <th class="tg-7ab7">情绪</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-7ab7">1</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU1_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">抬高眉毛内角</td>
+    <td class="tg-7ab7">恶心、惊讶、高兴、恐惧、伤心</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">2</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU2_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">抬高眉毛外角</td>
+    <td class="tg-7ab7">惊讶</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">4</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU4_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7"> 皱眉</td>
+    <td class="tg-7ab7">伤心、恐惧、生气、恶心</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">5</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU5_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">扩大眼眶</td>
+    <td class="tg-7ab7">生气、惊讶、恐惧</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">6</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU6_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">收缩眼睛周围皮肤</td>
+    <td class="tg-7ab7">高兴</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">7</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU7_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">缩小眼眶</td>
+    <td class="tg-7ab7">恶心</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">9</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU9_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">皱鼻</td>
+    <td class="tg-7ab7">恶心、生气</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">10</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU10_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">抬上嘴唇，鼻唇沟加深</td>
+    <td class="tg-7ab7">恶心、生气</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">11</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU11_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">鼻孔扩大，鼻唇沟加深</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">12</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU12_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">唇角拉伸</td>
+    <td class="tg-7ab7">高兴</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">13</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU13_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">嘴角提升</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">14</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU14_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">收紧嘴角</td>
+    <td class="tg-7ab7">恶心、高兴、伤心</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">15</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU15_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">唇角下拉</td>
+    <td class="tg-7ab7">伤心、恶心</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">16</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU16_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">下唇下压</td>
+    <td class="tg-7ab7">生气</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">17</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU17_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">噘嘴</td>
+    <td class="tg-7ab7">恶心</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">18</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU18_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">嘴角皱起</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">20</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU20_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">嘴唇侧向拉伸</td>
+    <td class="tg-7ab7">恐惧</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">22</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU22_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+></td>
+    <td class="tg-7ab7">嘴唇向外呈漏斗状</td>
+    <td class="tg-7ab7">生气</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">23</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU23_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">嘴唇和嘴唇周围皮肤收紧变薄</td>
+    <td class="tg-7ab7">生气</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">24</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU24_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">嘴唇向中间拉并压在一起</td>
+    <td class="tg-7ab7">恶心</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">25</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU25_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">嘴角张开</td>
+    <td class="tg-7ab7">恐惧、惊讶、恶心</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">26</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU26_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">嘴巴小张</td>
+    <td class="tg-7ab7">惊讶、高兴</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">27</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU27_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">嘴巴大张</td>
+    <td class="tg-7ab7">惊讶、高兴</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">28</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU28_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">抿嘴</td>
+    <td class="tg-7ab7">高兴</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">41</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU41_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">眼睑下垂</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">42</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU42_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">眯眼</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">43</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU43_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">上眼睑下降</td>
+    <td class="tg-7ab7">伤心</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">44</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU44_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">斜视</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">45</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU45_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">双眼眨眼</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+  <tr>
+    <td class="tg-7ab7">46</td>
+    <td class="tg-7ab7"><video class="au-video" src="../au_vid/AU46_cropped.mp4" autoplay loop muted></video>
+<div class="speed">
+  <input class="speedRange" type="range" min="0.5" max="2.0" step="0.1" value="1.0">
+  <span class="midSpeed muted">1.0x</span>
+</div>
+</td>
+    <td class="tg-7ab7">单眼眨眼</td>
+    <td class="tg-7ab7">　</td>
+  </tr>
+</tbody>
+</table>
+        </section>
+<section id="coding-guide">
+      <h2>一个简短的微表情编码指南</h2>
+       <div class="box">
+   <ul>
+        <li>当AU12出现时，可以被编码为积极情绪，即高兴；AU6，AU28都为高兴的特定AU，也可以被编码为积极情绪；</li>
+        <li>当AU2出现时，可以被编码为惊讶；</li>
+        <li>当AU4出现时，可以被编码为消极情绪；</li>
+        <li>当AU16、AU22和AU23这些生气的特定AU出现时，可以被编码为生气；</li>
+        <li>当AU1，AU4，AU5和AU25同时出现时，可以编码为害怕；</li>
+        <li>当AU7、AU24这些厌恶的特定AU出现时，可以被编码为厌恶；</li>
+<li>当AU4和AU5同时出现时，可以编码为伤心；AU43为伤心的特定AU，也可以编码为伤心。</li>
+</ul>
+</div>
+</section>
+ <section id ="ref" >
+   <h2>参考文献</h2>
+   <p>Dong, Z., Wang, G., Lu, S., Li, J., Yan, W., & Wang, S. J. (2022). Spontaneous Facial Expressions and Micro-expressions Coding: From Brain to Face. <i>Frontiers in Psychology</i>, 5808.</p>
+</section>
+
+<script src="js/jquery-3.4.1.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+<script>
+  document.querySelectorAll('tr').forEach(function(row){
+    var video = row.querySelector('video.au-video');
+    var range = row.querySelector('input.speedRange');
+    var label = row.querySelector('span.midSpeed');
+    if(!video || !range || !label) return;
+
+    range.addEventListener('input', function(){
+      var v = parseFloat(this.value);
+      video.playbackRate = v;
+      label.textContent = v.toFixed(1) + 'x';
+    });
+  });
+</script>
+
+  </div><!-- /.content -->
+
+  <div class="footer">
+    © <span id="y"></span> MELAB · Powered by GitHub Pages
+  </div>
+</div><!-- /.container -->
+
+<script src="../assets/js/lang.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+
+
+</html>
