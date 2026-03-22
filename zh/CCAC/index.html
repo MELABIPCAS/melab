@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCAC2026 微表情识别挑战赛</title>
+    <!-- 引入 Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> <!-- 以后你的个性化颜色、字体放这里 -->
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CCAC2026 微表情识别挑战赛</a>
+            <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">主页</a>
+                <a class="nav-link" href="tracks.html">赛道</a>
+                <a class="nav-link" href="leaderboard.html">排行榜</a>
+                <a class="nav-link" href="committee.html">委员会</a>
+                <a class="nav-link" href="https://www.wjx.cn/" target="_blank" rel="noopener noreferrer">报名入口</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="homepage-main balanced-layout">
+        <section id="introduction" class="content-block section-intro">
+            <div class="content-head">
+                <h1>赛事主页</h1>
+                <p class="section-note">中国情感计算大会 CCAC 2026 微表情识别挑战赛官方主页</p>
+            </div>
+            <div class="intro-layout">
+                <div class="intro-copy">
+                    <p class="lead-text">第六届中国情感计算大会（CCAC 2026）将于 2026 年 7 月在湖北武汉召开。微表情识别挑战赛作为本届重要评测任务，聚焦细粒度情绪信号建模，推动多模态感知与可解释分析方法发展。</p>
+                    <p>本届挑战赛依托统一评测协议与公开提交机制，设置“事件相机单模态微表情识别”和“事件相机+RGB双模态微表情识别”两条赛道，旨在形成可复现、可比较、可扩展的研究基线。</p>
+                    <div class="home-links">
+                        <a href="tracks.html" class="home-link-item">查看赛道说明</a>
+                        <a href="leaderboard.html" class="home-link-item">查看实时排行榜</a>
+                        <a href="committee.html" class="home-link-item">查看委员会名单</a>
+                        <a href="https://www.wjx.cn/" target="_blank" rel="noopener noreferrer" class="home-link-item primary-link-item">填写报名问卷</a>
+                    </div>
+                </div>
+                <aside class="intro-side">
+                    <h3>速览</h3>
+                    <ul>
+                        <li><span>210</span> 个事件相机-RGB配对样本</li>
+                        <li><span>2</span> 条赛道：事件相机/事件相机+RGB单双模态</li>
+                        <li><span>7月</span> CCAC 2026 会议期间发布结果</li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="highlight-grid">
+                <article class="highlight-card">
+                    <h3>跨模态评测</h3>
+                    <p>面向 Event 与 RGB 融合建模，考察鲁棒特征表达能力。</p>
+                </article>
+                <article class="highlight-card">
+                    <h3>统一提交机制</h3>
+                    <p>统一评测脚本与日志记录，确保结果可复核、可复现。</p>
+                </article>
+                <article class="highlight-card">
+                    <h3>开放学术交流</h3>
+                    <p>鼓励方法报告与误差分析，促进学术与应用双向反馈。</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="resources" class="content-block section-resources">
+            <div class="content-head">
+                <h2>资源下载</h2>
+            </div>
+            <div class="notice-list">
+                <article class="notice-item">
+                    <h3>数据下载（百度网盘）</h3>
+                    <p>训练数据、验证样例与官方提交模板统一通过百度网盘提供下载。</p>
+                    <p>提取码：<strong>CCAC</strong></p>
+                    <p><a href="https://pan.baidu.com/" target="_blank" rel="noopener noreferrer" class="home-link-item">前往百度网盘下载</a></p>
+                </article>
+                <article class="notice-item">
+                    <h3>Baseline 基线说明</h3>
+                    <p>提供官方基线模型说明，包括模型架构、输入维度、评价指标。</p>
+                    <p>建议在复现实验前阅读 README 与参数说明，确保评测结果可复现。</p>
+                    <p><a href="#" class="home-link-item">查看 Baseline 文档</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="notice" class="content-block section-notice">
+            <div class="content-head">
+                <h2>参赛须知</h2>
+            </div>
+            <div class="notice-list notice-rules">
+                <article class="notice-item notice-rule-item">
+                    <h3>赛道报名</h3>
+                    <p>各赛道独立设置排名，选手可根据自身情况报名一个或多个赛道。请先完成问卷星报名问卷并保留回执信息。</p>
+                </article>
+                <article class="notice-item notice-rule-item">
+                    <h3>提交机会</h3>
+                    <p>各赛道均有两次提交机会，无效提交不计入次数。</p>
+                </article>
+                <article class="notice-item notice-rule-item">
+                    <h3>评测方式</h3>
+                    <p>本次评测采用提交+核验方式。提交阶段仅需提交测试集结果；核验阶段需提供技术报告、相关代码、模型权重下载链接等详细内容。</p>
+                </article>
+                <article class="notice-item notice-rule-item">
+                    <h3>补充说明</h3>
+                    <p>所有获奖队伍须提交4页技术报告（中英文不限），由组委会官网公开共享。具体评测细节如与以上规则有出入，以后续邮件通知为准。</p>
+                </article>
+                <article class="notice-item notice-rule-item">
+                    <h3>报名入口与答疑</h3>
+                    <p>报名问卷入口：<a href="https://www.wjx.cn/" target="_blank" rel="noopener noreferrer">问卷星报名表</a>。提交前建议先查看 <a href="faq.html">FAQ</a>，可减少重复咨询。</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="deadline" class="content-block section-deadline">
+            <div class="content-head">
+                <h2>截止要求</h2>
+            </div>
+            <div class="deadline-wrapper">
+                <article class="deadline-panel">
+                    <h3>关键时间节点</h3>
+                    <ul>
+                        <li><span>2026 年 3 月 25 日</span> 任务征集截止</li>
+                        <li><span>2026 年 4 月 1 日</span> 评测任务发布</li>
+                        <li><span>2026 年 4 月 5 日 23:59</span> 报名开始时间</li>
+                    </ul>
+                </article>
+                <article class="deadline-panel">
+                    <h3>最终提交清单</h3>
+                    <ul>
+                        <li>可执行的预测结果文件与提交记录编号</li>
+                        <li>技术报告（方法、消融实验、误差分析）</li>
+                        <li>核心代码说明与运行环境配置</li>
+                    </ul>
+                </article>
+            </div>
+            <p class="contact-mail">如有疑问，请致信评测会务组：<a href="mailto:disclab@fudan.edu.cn">disclab@fudan.edu.cn</a></p>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="text-center py-4 bg-light mt-5">
+        <p>&copy; 2026 中国科学院大学心理研究所</p>
+    </footer>
+
+</body>
+</html>

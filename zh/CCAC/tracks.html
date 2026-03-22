@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CCAC2026 赛道说明</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">CACC2026 微表情识别挑战赛</a>
+			<div class="navbar-nav">
+				<a class="nav-link" href="index.html">主页</a>
+				<a class="nav-link active" href="tracks.html">赛道</a>
+				<a class="nav-link" href="leaderboard.html">排行榜</a>
+				<a class="nav-link" href="committee.html">委员会</a>
+				<a class="nav-link" href="https://www.wjx.cn/" target="_blank" rel="noopener noreferrer">报名问卷</a>
+				<a class="nav-link" href="faq.html">FAQ</a>
+			</div>
+		</div>
+	</nav>
+
+	<main class="tracks-main">
+		<section class="content-block tracks-overview">
+			<div class="content-head">
+				<h1>赛道总览</h1>
+			</div>
+			<p class="lead-text">本届微表情识别挑战赛设置两个识别赛道，分别面向事件相机单模态与 RGB+事件相机双模态场景，重点考察模型在细微动作捕捉、类别区分与跨模态建模方面的综合能力。</p>
+			<div class="overview-tags">
+				<span>任务导向：微表情识别</span>
+				<span>模态组合：单模态 + 双模态</span>
+				<span>评测重点：准确性 + 稳定性</span>
+			</div>
+		</section>
+
+		<section class="content-block track-card">
+			<div class="track-head">
+				<h2>赛道一：事件相机单模态微表情识别</h2>
+				<p>目标：仅基于事件相机数据（Event Stream）预测样本所属的微表情类别。</p>
+			</div>
+			<div class="track-grid">
+				<article class="track-panel">
+					<h3>赛道介绍</h3>
+					<p>该赛道聚焦事件视觉对微弱面部动态的捕捉能力，要求模型在低信噪比、短时序和类别不平衡条件下完成稳定分类。参赛方法需仅使用事件模态输入，并保证结果可复现。</p>
+				</article>
+				<article class="track-panel">
+					<h3>数据样例</h3>
+					<pre class="sample-block"><code>sample_id,event_file,label
+E0001,event/E0001.npz,positive
+E0002,event/E0002.npz,surprise
+E0003,event/E0003.npz,negative</code></pre>
+				</article>
+			</div>
+			<article class="track-metrics">
+				<h3>评价指标</h3>
+				<ul>
+					<li>UF1（Unweighted F1）：衡量各类别均衡分类能力</li>
+					<li>UAR（Unweighted Average Recall）：衡量类别召回均衡性</li>
+					<li>Accuracy：作为辅助指标评估整体分类正确率</li>
+				</ul>
+			</article>
+		</section>
+
+		<section class="content-block track-card">
+			<div class="track-head">
+				<h2>赛道二：RGB + 事件相机双模态微表情识别</h2>
+				<p>目标：融合 RGB 视频与事件相机数据，预测样本所属的微表情类别。</p>
+			</div>
+			<div class="track-grid">
+				<article class="track-panel">
+					<h3>赛道介绍</h3>
+					<p>该赛道强调跨模态融合建模能力，要求模型充分利用 RGB 的纹理信息与事件流的动态信息提升识别性能。主办方鼓励采用特征级融合、决策级融合与对齐学习等方案。</p>
+				</article>
+				<article class="track-panel">
+					<h3>数据样例</h3>
+					<pre class="sample-block"><code>sample_id,event_file,rgb_file,label
+M0001,event/M0001.npz,rgb/M0001.mp4,positive
+M0002,event/M0002.npz,rgb/M0002.mp4,surprise
+M0003,event/M0003.npz,rgb/M0003.mp4,negative</code></pre>
+				</article>
+			</div>
+			<article class="track-metrics">
+				<h3>评价指标</h3>
+				<ul>
+					<li>UF1（Unweighted F1）：衡量跨类别的均衡分类能力</li>
+					<li>UAR（Unweighted Average Recall）：衡量模型对各类别的召回稳定性</li>
+					<li>Accuracy：作为辅助指标评估整体分类正确率</li>
+				</ul>
+			</article>
+		</section>
+
+		<p class="contact-mail">如有疑问，请致信评测会务组：<a href="mailto:disclab@fudan.edu.cn">disclab@fudan.edu.cn</a></p>
+	</main>
+
+	<footer class="text-center py-4 bg-light mt-5">
+		<p>&copy; 2026 中国科学院大学心理研究所</p>
+	</footer>
+</body>
+</html>
