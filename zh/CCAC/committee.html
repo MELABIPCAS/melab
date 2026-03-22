@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CACC2026 委员会</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .committee-main {
+            width: min(1100px, calc(100% - 3rem));
+            margin: 2.6rem auto 4rem;
+            display: grid;
+            gap: 1.2rem;
+        }
+
+        .committee-group .content-head {
+            margin-bottom: 0.9rem;
+        }
+
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.9rem;
+        }
+
+        .member-grid.wide {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .member-card {
+            border: 1px solid rgba(143, 155, 173, 0.35);
+            border-radius: 14px;
+            padding: 0.9rem;
+            background: linear-gradient(130deg, #ffffff, rgba(245, 248, 252, 0.95));
+            text-align: center;
+        }
+
+        .member-card img {
+            width: 118px;
+            height: 118px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(47, 71, 99, 0.2);
+            display: block;
+            margin: 0 auto 0.7rem;
+        }
+
+        .member-card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .member-card p {
+            margin: 0;
+            font-size: 0.93rem;
+        }
+
+        @media (max-width: 900px) {
+            .committee-main {
+                width: min(1100px, calc(100% - 1rem));
+                margin-top: 1.3rem;
+            }
+
+            .member-grid,
+            .member-grid.wide {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">CACC2026 微表情识别挑战赛</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">主页</a>
+                <a class="nav-link" href="tracks.html">赛道</a>
+                <a class="nav-link" href="leaderboard.html">排行榜</a>
+                <a class="nav-link active" href="committee.html">委员会</a>
+                <a class="nav-link" href="https://www.wjx.cn/" target="_blank" rel="noopener noreferrer">报名问卷</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="committee-main">
+        <section class="content-block">
+            <div class="content-head">
+                <h1>委员会</h1>
+                <p class="section-note">照片+文字展示，后续你可直接替换姓名、单位和图片地址。</p>
+            </div>
+        </section>
+
+        <section class="content-block committee-group">
+            <div class="content-head">
+                <h2>主办方</h2>
+            </div>
+            <div class="member-grid">
+                <article class="member-card">
+                    <img src="https://placehold.co/240x240/e9edf3/4a5d74?text=%E4%B8%BB%E5%8A%9E%E6%96%B9+A" alt="主办方A照片">
+                    <h3>中国中文信息学会情感计算专委会</h3>
+                </article>
+                <article class="member-card">
+                    <img src="https://placehold.co/240x240/e9edf3/4a5d74?text=%E4%B8%BB%E5%8A%9E%E6%96%B9+B" alt="主办方B照片">
+                    <h3>CCAC 2026 组委会</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-block committee-group">
+            <div class="content-head">
+                <h2>承办方</h2>
+            </div>
+            <div class="member-grid">
+                <article class="member-card">
+                    <img src="https://placehold.co/240x240/edf2f8/4a5d74?text=%E6%89%BF%E5%8A%9E%E6%96%B9+A" alt="承办方A照片">
+                    <h3>武汉纺织大学</h3>
+                </article>
+                <article class="member-card">
+                    <img src="https://placehold.co/240x240/edf2f8/4a5d74?text=%E6%89%BF%E5%8A%9E%E6%96%B9+B" alt="承办方B照片">
+                    <h3>武汉大学</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-block committee-group">
+            <div class="content-head">
+                <h2>评测委员</h2>
+            </div>
+            <div class="member-grid wide">
+                <article class="member-card">
+                    <img src="https://placehold.co/240x240/f1f5fb/4a5d74?text=%E8%AF%84%E6%B5%8B+1" alt="评测委员1照片">
+                    <h3>张老师</h3>
+                </article>
+                <article class="member-card">
+                    <img src="https://placehold.co/240x240/f1f5fb/4a5d74?text=%E8%AF%84%E6%B5%8B+2" alt="评测委员2照片">
+                    <h3>李老师</h3>
+                </article>
+                <article class="member-card">
+                    <img src="https://placehold.co/240x240/f1f5fb/4a5d74?text=%E8%AF%84%E6%B5%8B+3" alt="评测委员3照片">
+                    <h3>王老师</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-block committee-group">
+            <div class="content-head">
+                <h2>顾问委员</h2>
+            </div>
+            <div class="member-grid">
+                <article class="member-card">
+                    <img src="https://placehold.co/240x240/f5f7fb/4a5d74?text=%E9%A1%BE%E9%97%AE+A" alt="顾问委员A照片">
+                    <h3>刘教授</h3>
+                </article>
+                <article class="member-card">
+                    <img src="https://placehold.co/240x240/f5f7fb/4a5d74?text=%E9%A1%BE%E9%97%AE+B" alt="顾问委员B照片">
+                    <h3>陈教授</h3>
+                </article>
+            </div>
+        </section>
+
+        <p class="contact-mail">如有疑问，请致信评测会务组：<a href="mailto:disclab@fudan.edu.cn">aaaaaaaaaa.cn</a></p>
+    </main>
+
+    <footer class="text-center py-4 bg-light mt-5">
+        <p>&copy; 2026 中国科学院大学心理研究所</p>
+    </footer>
+</body>
+</html>
